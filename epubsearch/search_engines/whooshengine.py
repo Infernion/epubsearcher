@@ -6,6 +6,8 @@ from whoosh.qparser import QueryParser
 from .baseengine import BaseEngine
 import os
 import re
+import logging
+
 
 class WhooshEngine(BaseEngine):
     # whoosh
@@ -15,7 +17,7 @@ class WhooshEngine(BaseEngine):
         try:
             self.ix = index.open_dir(self.databasePath)
         except Exception as e:
-            print("openning database {} failed".format(self.databaseName))
+            logging.error("openning database {} failed".format(self.databaseName))
 
     def create(self):
 
@@ -23,23 +25,23 @@ class WhooshEngine(BaseEngine):
             os.mkdir(self.databasePath)
 
         try:
-            print("openning database {} to create".format(self.databaseName))
+            logging.debug("openning database {} to create".format(self.databaseName))
             self.ix = index.create_in(self.databasePath, self.schema)
         except Exception as e:
-            print(e)
+            logging.error(e)
 
         self.writer = self.ix.writer()
 
     def add(self, path='', href='', title='', cfiBase='', spinePos=''):
         text = self.__get_text(path)
         self.writer.add_document(title=str(title), path=str(path), href=str(href), cfiBase=str(cfiBase), spinePos=str(spinePos), content=str(text))
-        print("Indexed: " + title + ' | ' + path + ' | ' + href + ' | ' + str(spinePos))
+        logging.debug("Indexed: " + title + ' | ' + path + ' | ' + href + ' | ' + str(spinePos))
 
     def finished(self):
         self.writer.commit()
 
     def query(self, q, limit=None):
-        print('Q', q)
+        logging.debug('Q {}'.format(q))
         with self.ix.searcher() as searcher:
             results = []
             parsedQuery = QueryParser("content", schema=self.ix.schema).parse(q)

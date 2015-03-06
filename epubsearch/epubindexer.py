@@ -1,6 +1,7 @@
 import importlib
 from lxml import etree
 import re
+import logging
 
 class EpubIndexer(object):
     epub = False
@@ -11,10 +12,14 @@ class EpubIndexer(object):
             mod = importlib.import_module("epubsearch.search_engines.%sengine" % engineName)
             # import whooshengine as engine
             self.engine = getattr(mod,'%sEngine' % engineName.capitalize())(databaseName)
-            print(self.engine)
+            logging.info(self.engine)
 
     def load(self, epub):
         self.epub = epub
+        # try:
+        #     self.engine.open()
+        # except Exception as e:
+        #     print(e)
         self.engine.create()
 
         for spineItem in epub.spine:
@@ -40,7 +45,6 @@ class EpubIndexer(object):
 
             # find base of cfi
             cfiBase = hit['cfiBase'].decode(encoding="UTF-8") + "!"
-            cfiBase2 = hit['cfiBase']+ b"!"
 
             with open(hit["path"]) as fileobj:
                 tree = etree.parse(fileobj)
@@ -67,8 +71,8 @@ class EpubIndexer(object):
                     try:
                         item['highlight'] = createHighlight(word.text, q) # replace me with above
                     except Exception as e:
-                        print("Exception when creating highlight for query", q)
-                        print(e)
+                        logging.error("Exception when creating highlight for query", q)
+                        logging.error(e)
                         item['highlight'] = ''
 
                     #item['highlight'] = word.text

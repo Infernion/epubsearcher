@@ -1,3 +1,4 @@
+import logging
 import os
 import re
 import pdb
@@ -29,19 +30,19 @@ class Cheshire3Engine(BaseEngine):
             try:
                 self.titleSel = self.db.get_object(self.session, 'titleSelector')
             except ObjectDoesNotExistException as e:
-                print e
+                logging.error(e)
 
     def __initializeAnywhereSelector(self):
         try:
             self.anywhereSel = self.db.get_object(self.session, 'anywhereXPathSelector')
         except ObjectDoesNotExistException as e:
-            print e
+            logging.error(e)
 
     def __initializeProximityExtractor(self):
         try:
             self.proxExtractor = self.db.get_object(self.session, 'ProxExtractor')
         except ObjectDoesNotExistException as e:
-            print e
+            logging.error(e)
 
     def __highlight(self, text, term, n):
         """Searches for text, retrieves n words either side of the text, which are retuned seperately"""
@@ -64,8 +65,8 @@ class Cheshire3Engine(BaseEngine):
             self.db = self.server.get_object(self.session, self.databaseName)
             self.session.database = self.databaseName
         except Exception as e:
-            print e
-            print "openning database {} failed".format(self.databaseName)
+            logging.error(e)
+            logging.error( "openning database {} failed".format(self.databaseName))
 
     def create(self):
         if not os.path.exists(self.databasePath):
@@ -79,10 +80,10 @@ class Cheshire3Engine(BaseEngine):
             json.dump({}, f)
 
         try:
-            print "openning database {} to create".format(self.databasePath)
+            logging.info("openning database {} to create".format(self.databasePath))
             os.system("cheshire3-init " + self.databasePath + " --database=" + self.databaseName)
-        except Exception, e:
-            print e
+        except Exception as e:
+            logging.error(e)
 
     def add(self, path='', href='', title='', cfiBase='', spinePos=''):
         # first, index the document in cheshire3 using unix commands

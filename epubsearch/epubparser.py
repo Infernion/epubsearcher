@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from lxml import etree
 
+import logging
 import os
 
 class EpubParser(object):
@@ -58,7 +59,7 @@ class EpubParser(object):
             'dc':'http://purl.org/dc/elements/1.1/',
             'dcterms':'http://purl.org/dc/terms/'}
 
-        print("Parsing Manifest")
+        logging.debug("Parsing Manifest")
 
         items = {}
 
@@ -93,7 +94,7 @@ class EpubParser(object):
     def parseToc(self, filename):
         namespaces = {'xmlns': 'http://www.daisy.org/z3986/2005/ncx/'}
 
-        print("Parsing TOC")
+        logging.debug("Parsing TOC")
 
         items = []
 
@@ -125,7 +126,7 @@ class EpubParser(object):
                 'dc':'http://purl.org/dc/elements/1.1/',
                 'dcterms':'http://purl.org/dc/terms/'}
 
-        print("Parsing Spine")
+        logging.debug("Parsing Spine")
 
         spinePos = 1;
 
