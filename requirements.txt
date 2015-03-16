@@ -1,3 +1,5 @@
 whoosh
 pymorphy2
 pylibmc
+lxml
+BeautifulSoup4

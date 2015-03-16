@@ -3,6 +3,8 @@ from lxml import etree
 import re
 import logging
 
+i = 0
+
 class EpubIndexer(object):
     epub = False
     engine = False
@@ -39,9 +41,9 @@ class EpubIndexer(object):
 
         for hit in rawresults:
             baseitem = {}
-            baseitem['title'] = hit["title"]
-            baseitem['href'] = hit["href"]
-            baseitem['path'] = hit["path"]
+            baseitem['title'] = hit["title"].decode(encoding="UTF-8")
+            baseitem['href'] = hit["href"].decode(encoding="UTF-8")
+            baseitem['path'] = hit["path"].decode(encoding="UTF-8")
 
             # find base of cfi
             cfiBase = hit['cfiBase'].decode(encoding="UTF-8") + "!"
@@ -106,8 +108,22 @@ def getCFIChapter(cfiBase):
     return int(chapter_location)
 
 def createHighlight(text, query):
-    tag = "<b class='match'>"
-    closetag = "</b>"
+    global i
+    tag = '<b class="match" epub:type="noteref" href="#{}">'.format(i)
+    closetag = '</b><aside epub:type="footnote" id="{}">Test</aside>'.format(i)
+    offset = len(query)
+
+    leading_text = trimLength(text[:text.lower().find(query)],-10) + tag
+    word = text[text.lower().find(query):text.lower().find(query)+offset]
+    ending_text = closetag + trimLength(text[text.lower().find(query)+offset:],10)
+    i+=1
+    return leading_text + word + endWithPeriods(ending_text)
+
+def createTagPopup(text, query, annotation):
+    a_tag = '<a class="match" epub:type="noteref" href="#{href}">'
+    close_a_tag = '</a>'
+
+    aside_tag = '<aside epub:type="footnote" id="{href}">'
     offset = len(query)
 
     leading_text = trimLength(text[:text.lower().find(query)],-10) + tag
