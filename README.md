@@ -19,8 +19,7 @@
 
 Архитектура
 ===========
-
-![Архитектура](docs/epubseacher_architecture.png)
+![Архитектура](/Infernion/epubseacher/raw/master/docs/epubseacher_architecture.png)
 
 Как использовать
 ==============
@@ -30,7 +29,7 @@
 2. Установить зависимости
    ``pip install -r requirements.txt``
 
-![Способы использования](docs/inputData.png)
+![Способы использования](/Infernion/epubseacher/raw/master/docs/inputData.png)
 
 Для запуска с терминала
 =======================
