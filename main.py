@@ -3,9 +3,9 @@ logging.basicConfig(filename='logs', format='%(levelname)s:%(asctime)s %(message
 
 from optparse import OptionParser
 
-from epubsearch import EpubParser
-from epubsearch import EpubIndexer
-from epubsearch import WordMorphoGenerator
+from .epubsearch import EpubParser
+from .epubsearch import EpubIndexer
+from .epubsearch import WordMorphoGenerator
 
 import zipfile,os.path
 import shutil
