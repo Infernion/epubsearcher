@@ -16,5 +16,5 @@ class Pymorphy2Engine(BaseEngine):
 
     def lexeme(self):
         lexemes = self.parsed_normal_word.lexeme
-        self.lexemes = [lexeme.word for lexeme in lexemes]
+        self.lexemes = [lexeme.word for lexeme in lexemes if len(lexeme.word)>2]
 

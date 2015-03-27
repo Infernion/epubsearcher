@@ -5,7 +5,8 @@ import logging
 class WordMorphoGenerator(object):
     engine = False
 
-    def __init__(self, word, engineName='pymorphy2'):
+    def __init__(self, word, lang='ru'):
+        if lang=='ru': engineName='pymorphy2'
         if engineName:
             self.word = word
 

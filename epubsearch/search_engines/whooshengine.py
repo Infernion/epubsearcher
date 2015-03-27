@@ -46,13 +46,12 @@ class WhooshEngine(BaseEngine):
             results = []
             parsedQuery = QueryParser("content", schema=self.ix.schema).parse(q)
             hits = searcher.search(parsedQuery, limit=limit)
-
+            logging.debug("Hits {}".format(hits))
             for hit in hits:
                 item = {}
                 item['title'] = hit["title"].encode("utf-8")
                 item['href'] = hit["href"].encode("utf-8")
                 item['path'] = hit["path"].encode("utf-8")
-                item['title'] = hit["title"].encode("utf-8")
                 item['cfiBase'] = hit["cfiBase"].encode("utf-8")
                 item['spinePos'] = hit["spinePos"].encode("utf-8")
                 results.append(item)

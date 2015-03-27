@@ -3,7 +3,6 @@ from lxml import etree
 import re
 import logging
 
-i = 0
 
 class EpubIndexer(object):
     epub = False
@@ -66,18 +65,6 @@ class EpubIndexer(object):
                     item['baseCfi'] = cfiBase
                     item['cfi'] = getCFI(cfiBase, word)
                     #print cfi
-
-                    # Create highlight snippet in try / except
-                    # because I'm not convinced its error free for all
-                    # epub texts
-                    try:
-                        item['highlight'] = createHighlight(word.text, q) # replace me with above
-                    except Exception as e:
-                        logging.error("Exception when creating highlight for query", q)
-                        logging.error(e)
-                        item['highlight'] = ''
-
-                    #item['highlight'] = word.text
                     r["results"].append(item)
 
         ## Sort results by chapter
@@ -106,42 +93,3 @@ def getCFIChapter(cfiBase):
     cfiBase = re.sub(r'\[.*\]','',cfiBase)
     chapter_location = cfiBase[cfiBase.rfind('/')+1:cfiBase.find('!')]
     return int(chapter_location)
-
-def createHighlight(text, query):
-    global i
-    tag = '<b class="match" epub:type="noteref" href="#{}">'.format(i)
-    closetag = '</b><aside epub:type="footnote" id="{}">Test</aside>'.format(i)
-    offset = len(query)
-
-    leading_text = trimLength(text[:text.lower().find(query)],-10) + tag
-    word = text[text.lower().find(query):text.lower().find(query)+offset]
-    ending_text = closetag + trimLength(text[text.lower().find(query)+offset:],10)
-    i+=1
-    return leading_text + word + endWithPeriods(ending_text)
-
-def createTagPopup(text, query, annotation):
-    a_tag = '<a class="match" epub:type="noteref" href="#{href}">'
-    close_a_tag = '</a>'
-
-    aside_tag = '<aside epub:type="footnote" id="{href}">'
-    offset = len(query)
-
-    leading_text = trimLength(text[:text.lower().find(query)],-10) + tag
-    word = text[text.lower().find(query):text.lower().find(query)+offset]
-    ending_text = closetag + trimLength(text[text.lower().find(query)+offset:],10)
-
-    return leading_text + word + endWithPeriods(ending_text)
-
-def trimLength(text, words):
-    if words > 0:
-        text_list = text.split(' ')[:words]
-    else:
-        text_list = text.split(' ')[words:]
-
-    return ' '.join(text_list)
-
-def endWithPeriods(text):
-    if text[-1] not in '!?.':
-        return text + ' ...'
-    else:
-        return text
