@@ -1,12 +1,26 @@
 Что умеет
 ==========
-Ищет заданое слово в книге формата  epub
+Ищет заданое слово в книге формата  epub. В качестве результата возвращет JSON cледующего формата:
+```javascript
+{'word': 'POB',
+ 'lexemes': ['POBOB', 'POBAM']
+'results': [{'baseCfi': '/6/24[id15]!',
+'cfi': '/6/24[id15]!/4/62',
+'href': 'index_split_011.html',
+'path': 'Sensei4///index_split_011.html',
+'title': ''},
+{'baseCfi': '/6/24[id15]!',
+'cfi': '/6/24[id15]!/4/66/2',
+'href': 'index_split_011.html',
+'path': 'Sensei4///index_split_011.html',
+'title': ''}]}
+```
 
 
 Архитектура
 ===========
 
-![Архитектура](/docs/epubseacher_architecture.png)
+![Архитектура](docs/epubseacher_architecture.png)
 
 Как использовать
 ==============
@@ -16,7 +30,7 @@
 2. Установить зависимости
    ``pip install -r requirements.txt``
 
-![Способы использования](/docs/inputData.png)
+![Способы использования](docs/inputData.png)
 
 Для запуска с терминала
 =======================
