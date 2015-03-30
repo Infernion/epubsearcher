@@ -27,7 +27,7 @@
 
 Для установки дев версии
 
-    pip install git+https://bitbucket.org/Infernion/epubseacher/
+    pip install https://bitbucket.org/Infernion/epubsearcher/get/dev.tar.bz2 
 
 Для установки стабильной версии
 
