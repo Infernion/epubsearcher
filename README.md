@@ -25,12 +25,13 @@
 ==============
 Должен быть установлен python3.4, над другими версия не тестировал, но должно работать
 
-1. Склонировать репозитарий
-2. Установить зависимости ``pip install -r requirements.txt``
-
-Или
+Для установки дев версии
 
     pip install git+https://bitbucket.org/Infernion/epubseacher/
+
+Для установки стабильной версии
+
+    pip install epubsearcher
 
 ![Способы использования](/Infernion/epubseacher/raw/master/docs/inputData.png)
 
