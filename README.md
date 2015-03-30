@@ -19,7 +19,7 @@
 
 Архитектура
 ===========
-![Архитектура](/Infernion/epubseacher/raw/master/docs/epubseacher_architecture.png)
+![Архитектура](/Infernion/epubsearcher/raw/master/docs/epubsearcher_architecture.png)
 
 Как утсановить
 ==============
@@ -33,7 +33,7 @@
 
     pip install epubsearcher
 
-![Способы использования](/Infernion/epubseacher/raw/master/docs/inputData.png)
+![Способы использования](/Infernion/epubsearcher/raw/master/docs/inputData.png)
 
 Для запуска с терминала
 =======================
