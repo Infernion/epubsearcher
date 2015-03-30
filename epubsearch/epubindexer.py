@@ -9,7 +9,8 @@ class EpubIndexer(object):
     epub = False
     engine = False
 
-    def __init__(self, engineName=False, databaseName='indexdir'):
+    def __init__(self, engineName=False, databaseName='indexdir', force_index=False):
+        self.force_index = force_index
         self.databaseName = databaseName
         self.databasePath = "databases/" + databaseName
         if engineName:
@@ -20,7 +21,7 @@ class EpubIndexer(object):
 
     def load(self, epub):
         self.epub = epub
-        if os.path.exists(self.databasePath ):
+        if os.path.exists(self.databasePath) and not self.force_index:
             try:
                 self.engine.open()
             except Exception as e:

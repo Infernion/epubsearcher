@@ -26,6 +26,12 @@ class TestEpubWorker(unittest.TestCase):
         self.assertDictEqual(self.epub_file.search_word('хряк'), WRONG_REQUEST)
         self.assertDictEqual(self.epub_file.search_word('аллат')['results'][0], RIGHT_REQUEST)
 
+    def test_force_index(self):
+        pass
+
+    def test_get_old_book_from_index(self):
+        pass
+
 
 if __name__ == '__main__':
     unittest.main()

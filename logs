@@ -824,3 +824,200 @@ INFO:2015-03-30 16:49:12,534 format: 2.4, revision: 393442, updated: 2015-01-17T
 INFO:2015-03-30 16:49:12,537 Search word Moby and lexemes
 DEBUG:2015-03-30 16:49:12,537 Q moby
 DEBUG:2015-03-30 16:49:12,561 Hits <Top 29 Results for Term('content', 'moby') runtime=0.0016614390005997848>
+INFO:2015-03-30 17:02:05,514 ********************
+INFO:2015-03-30 17:02:05,516 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/moby-dick.epub
+DEBUG:2015-03-30 17:02:05,656 Parsing Manifest
+DEBUG:2015-03-30 17:02:05,659 Parsing TOC
+DEBUG:2015-03-30 17:02:05,672 Parsing Spine
+INFO:2015-03-30 17:02:05,902 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f096793c9b0>
+INFO:2015-03-30 17:02:05,902 Indexing
+INFO:2015-03-30 17:02:05,903 Search word Moby
+DEBUG:2015-03-30 17:02:05,904 Q Moby
+DEBUG:2015-03-30 17:02:05,936 Hits <Top 29 Results for Term('content', 'moby') runtime=0.002262314999825321>
+INFO:2015-03-30 17:02:15,005 ********************
+INFO:2015-03-30 17:02:15,007 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/moby-dick.epub
+DEBUG:2015-03-30 17:02:15,144 Parsing Manifest
+DEBUG:2015-03-30 17:02:15,149 Parsing TOC
+DEBUG:2015-03-30 17:02:15,164 Parsing Spine
+INFO:2015-03-30 17:02:15,371 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fb6a5665a20>
+INFO:2015-03-30 17:02:15,371 Indexing
+INFO:2015-03-30 17:02:15,372 Search word Moby
+DEBUG:2015-03-30 17:02:15,372 Q Moby
+DEBUG:2015-03-30 17:02:15,394 Hits <Top 29 Results for Term('content', 'moby') runtime=0.0020601150008587865>
+INFO:2015-03-30 17:02:32,207 ********************
+INFO:2015-03-30 17:02:32,209 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/moby-dick.epub
+DEBUG:2015-03-30 17:02:32,327 Parsing Manifest
+DEBUG:2015-03-30 17:02:32,333 Parsing TOC
+DEBUG:2015-03-30 17:02:32,345 Parsing Spine
+INFO:2015-03-30 17:02:32,516 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7ff1c5b2ca20>
+INFO:2015-03-30 17:02:32,516 Indexing
+INFO:2015-03-30 17:02:32,518 Search word Moby
+DEBUG:2015-03-30 17:02:32,518 Q Moby
+DEBUG:2015-03-30 17:02:32,538 Hits <Top 29 Results for Term('content', 'moby') runtime=0.0017419730011170032>
+INFO:2015-03-30 17:03:09,284 ********************
+INFO:2015-03-30 17:03:09,287 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/moby-dick.epub
+DEBUG:2015-03-30 17:03:09,414 Parsing Manifest
+DEBUG:2015-03-30 17:03:09,417 Parsing TOC
+DEBUG:2015-03-30 17:03:09,429 Parsing Spine
+INFO:2015-03-30 17:03:09,702 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7ffadd685a20>
+INFO:2015-03-30 17:03:09,702 Indexing
+INFO:2015-03-30 17:03:09,704 Search word Moby
+DEBUG:2015-03-30 17:03:09,704 Q Moby
+DEBUG:2015-03-30 17:03:09,739 Hits <Top 29 Results for Term('content', 'moby') runtime=0.0018206790009571705>
+INFO:2015-03-30 17:03:18,108 ********************
+INFO:2015-03-30 17:03:58,260 ********************
+INFO:2015-03-30 17:04:03,211 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/AllatRa_Anastasia_Novykh.epub
+DEBUG:2015-03-30 17:04:05,137 Parsing Manifest
+DEBUG:2015-03-30 17:04:05,183 Parsing TOC
+DEBUG:2015-03-30 17:04:05,189 Parsing Spine
+INFO:2015-03-30 17:04:06,778 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fe2b1bf6978>
+INFO:2015-03-30 17:04:06,779 Indexing
+DEBUG:2015-03-30 17:04:06,780 openning database AllatRa_Anastasia_Novykh to create
+DEBUG:2015-03-30 17:04:11,615 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-30 17:04:16,083 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-30 17:04:21,703 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-30 17:04:26,178 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-30 17:04:30,462 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-30 17:04:35,289 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-30 17:04:40,068 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-30 17:04:44,641 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-30 17:04:49,286 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-30 17:04:53,823 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-30 17:04:58,748 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-30 17:05:04,242 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-30 17:05:09,510 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-30 17:05:14,097 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-30 17:05:18,785 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-30 17:05:23,584 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_015.html | index_split_015.html | 16
+DEBUG:2015-03-30 17:05:25,404 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_016.html | index_split_016.html | 17
+INFO:2015-03-30 17:06:29,552 ********************
+INFO:2015-03-30 17:06:29,556 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/AllatRa_Anastasia_Novykh.epub
+DEBUG:2015-03-30 17:06:30,483 Parsing Manifest
+DEBUG:2015-03-30 17:06:30,499 Parsing TOC
+DEBUG:2015-03-30 17:06:30,565 Parsing Spine
+INFO:2015-03-30 17:06:30,920 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f7389e45c50>
+INFO:2015-03-30 17:06:30,920 Indexing
+DEBUG:2015-03-30 17:06:30,920 openning database AllatRa_Anastasia_Novykh to create
+DEBUG:2015-03-30 17:06:31,496 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-30 17:06:32,016 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-30 17:06:32,527 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-30 17:06:33,020 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-30 17:06:33,555 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-30 17:06:34,101 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-30 17:06:34,622 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-30 17:06:35,197 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-30 17:06:35,713 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-30 17:06:36,254 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-30 17:06:36,920 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-30 17:06:37,455 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-30 17:06:38,021 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-30 17:06:38,604 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-30 17:06:39,138 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-30 17:06:39,644 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_015.html | index_split_015.html | 16
+DEBUG:2015-03-30 17:06:39,932 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_016.html | index_split_016.html | 17
+INFO:2015-03-30 17:06:48,631 Search word аллат
+DEBUG:2015-03-30 17:06:48,631 Q аллат
+DEBUG:2015-03-30 17:06:48,689 Hits <Top 6 Results for Term('content', 'аллат') runtime=0.0016960989996732678>
+INFO:2015-03-30 17:07:42,229 ********************
+INFO:2015-03-30 17:07:46,653 ********************
+INFO:2015-03-30 17:07:46,655 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 17:07:46,718 Parsing Manifest
+DEBUG:2015-03-30 17:07:46,719 Parsing TOC
+DEBUG:2015-03-30 17:07:46,721 Parsing Spine
+INFO:2015-03-30 17:07:46,931 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fa62c2d5f28>
+INFO:2015-03-30 17:07:46,931 Indexing
+DEBUG:2015-03-30 17:07:46,931 openning database Sensei4 to create
+DEBUG:2015-03-30 17:07:47,225 Indexed:  | ./tmp/Sensei4//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-30 17:07:47,548 Indexed:  | ./tmp/Sensei4//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-30 17:07:47,907 Indexed:  | ./tmp/Sensei4//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-30 17:07:48,196 Indexed:  | ./tmp/Sensei4//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-30 17:07:48,495 Indexed:  | ./tmp/Sensei4//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-30 17:07:48,850 Indexed:  | ./tmp/Sensei4//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-30 17:07:49,142 Indexed:  | ./tmp/Sensei4//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-30 17:07:49,475 Indexed:  | ./tmp/Sensei4//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-30 17:07:49,823 Indexed:  | ./tmp/Sensei4//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-30 17:07:50,142 Indexed:  | ./tmp/Sensei4//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-30 17:07:50,439 Indexed:  | ./tmp/Sensei4//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-30 17:07:50,757 Indexed:  | ./tmp/Sensei4//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-30 17:07:51,085 Indexed:  | ./tmp/Sensei4//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-30 17:07:51,449 Indexed:  | ./tmp/Sensei4//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-30 17:07:51,778 Indexed:  | ./tmp/Sensei4//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-30 17:07:52,131 Indexed:  | ./tmp/Sensei4//index_split_015.html | index_split_015.html | 16
+INFO:2015-03-30 17:08:00,186 Search word аллат
+DEBUG:2015-03-30 17:08:00,187 Q аллат
+DEBUG:2015-03-30 17:08:00,211 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0008503869994456181>
+INFO:2015-03-30 17:08:04,605 ********************
+INFO:2015-03-30 17:08:04,606 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 17:08:04,664 Parsing Manifest
+DEBUG:2015-03-30 17:08:04,666 Parsing TOC
+DEBUG:2015-03-30 17:08:04,666 Parsing Spine
+INFO:2015-03-30 17:08:04,867 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f2bf7924fd0>
+INFO:2015-03-30 17:08:04,868 Indexing
+INFO:2015-03-30 17:08:04,869 Search word аллат
+DEBUG:2015-03-30 17:08:04,869 Q аллат
+DEBUG:2015-03-30 17:08:04,892 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0010040370016213274>
+INFO:2015-03-30 17:08:08,501 ********************
+INFO:2015-03-30 17:08:08,503 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 17:08:08,547 Parsing Manifest
+DEBUG:2015-03-30 17:08:08,548 Parsing TOC
+DEBUG:2015-03-30 17:08:08,549 Parsing Spine
+INFO:2015-03-30 17:08:08,785 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fc2b1a12f28>
+INFO:2015-03-30 17:08:08,785 Indexing
+DEBUG:2015-03-30 17:08:08,786 openning database Sensei4 to create
+DEBUG:2015-03-30 17:08:09,088 Indexed:  | ./tmp/Sensei4//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-30 17:08:09,374 Indexed:  | ./tmp/Sensei4//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-30 17:08:09,727 Indexed:  | ./tmp/Sensei4//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-30 17:08:10,066 Indexed:  | ./tmp/Sensei4//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-30 17:08:10,366 Indexed:  | ./tmp/Sensei4//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-30 17:08:10,674 Indexed:  | ./tmp/Sensei4//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-30 17:08:11,020 Indexed:  | ./tmp/Sensei4//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-30 17:08:11,378 Indexed:  | ./tmp/Sensei4//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-30 17:08:11,707 Indexed:  | ./tmp/Sensei4//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-30 17:08:12,014 Indexed:  | ./tmp/Sensei4//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-30 17:08:12,308 Indexed:  | ./tmp/Sensei4//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-30 17:08:12,652 Indexed:  | ./tmp/Sensei4//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-30 17:08:12,964 Indexed:  | ./tmp/Sensei4//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-30 17:08:13,317 Indexed:  | ./tmp/Sensei4//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-30 17:08:13,634 Indexed:  | ./tmp/Sensei4//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-30 17:08:13,970 Indexed:  | ./tmp/Sensei4//index_split_015.html | index_split_015.html | 16
+INFO:2015-03-30 17:08:21,910 Search word аллат
+DEBUG:2015-03-30 17:08:21,910 Q аллат
+DEBUG:2015-03-30 17:08:21,931 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0008466149993182626>
+INFO:2015-03-30 17:08:48,583 ********************
+INFO:2015-03-30 17:08:48,585 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 17:08:48,631 Parsing Manifest
+DEBUG:2015-03-30 17:08:48,632 Parsing TOC
+DEBUG:2015-03-30 17:08:48,633 Parsing Spine
+INFO:2015-03-30 17:08:48,830 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fbfabf52fd0>
+INFO:2015-03-30 17:08:48,830 Indexing
+INFO:2015-03-30 17:08:48,831 Generate words for search
+INFO:2015-03-30 17:08:48,873 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 17:08:48,876 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 17:08:49,058 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 17:08:49,073 Search word аллат and lexemes
+DEBUG:2015-03-30 17:08:49,073 Q аллата
+DEBUG:2015-03-30 17:08:49,100 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.0009340550004708348>
+DEBUG:2015-03-30 17:08:49,432 Q аллаты
+DEBUG:2015-03-30 17:08:49,438 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013779599976260215>
+DEBUG:2015-03-30 17:08:49,439 Q аллате
+DEBUG:2015-03-30 17:08:49,446 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0008248239992099116>
+DEBUG:2015-03-30 17:08:49,552 Q аллату
+DEBUG:2015-03-30 17:08:49,559 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.0009186200004478451>
+DEBUG:2015-03-30 17:08:49,679 Q аллатой
+DEBUG:2015-03-30 17:08:49,685 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.00014491999900201336>
+DEBUG:2015-03-30 17:08:49,686 Q аллатою
+DEBUG:2015-03-30 17:08:49,692 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.00012885700016340706>
+DEBUG:2015-03-30 17:08:49,693 Q аллате
+DEBUG:2015-03-30 17:08:49,701 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.000754704000428319>
+DEBUG:2015-03-30 17:08:49,822 Q аллаты
+DEBUG:2015-03-30 17:08:49,828 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013737699919147417>
+DEBUG:2015-03-30 17:08:49,829 Q аллат
+DEBUG:2015-03-30 17:08:49,835 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0008373250002478017>
+DEBUG:2015-03-30 17:08:50,056 Q аллатам
+DEBUG:2015-03-30 17:08:50,063 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.00011782199908338953>
+DEBUG:2015-03-30 17:08:50,063 Q аллаты
+DEBUG:2015-03-30 17:08:50,069 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013716800094698556>
+DEBUG:2015-03-30 17:08:50,070 Q аллатами
+DEBUG:2015-03-30 17:08:50,076 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.00011928800086025149>
+DEBUG:2015-03-30 17:08:50,076 Q аллатах
+DEBUG:2015-03-30 17:08:50,082 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.00020875499831163324>

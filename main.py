@@ -24,10 +24,17 @@ def zipdir(source_dir, dest_zip):
 
 
 class EpubWorker(object):
-    '''
-
-    '''
-    def __init__(self, book_address, lang='ru'):
+    """
+    This module is main class. For using as library needed import this class.
+    @:book_address - address for dir or compressed epub publication
+        :parameter "./test_data/Sensei4.epub"
+    @:lang - need for generating lexemes
+        :parameter "ru" or "en"
+    @:force_index - if you need force reindex book
+        :parameter True/False
+    """
+    def __init__(self, book_address, lang='ru', force_index=False):
+        force_index=force_index
         self.is_epub = False
         if book_address[-4:] == 'epub':
             self.is_epub = True
@@ -38,7 +45,7 @@ class EpubWorker(object):
             book_address = self.dest_dir
 
         epub = EpubParser(book_address)
-        self.index = EpubIndexer(engineName='whoosh', databaseName=book_name)
+        self.index = EpubIndexer(engineName='whoosh', databaseName=book_name, force_index=force_index)
         logging.info('Indexing')
         self.index.load(epub)
 
@@ -86,6 +93,7 @@ def get_parameters():
     parser = OptionParser()
     parser.add_option('-b', '--book-address', dest='book_address')
     parser.add_option('-s', '--search', dest='search')
+    parser.add_option('-f', '--force-index', dest='force_index')
     parser.add_option('--lang', dest='language')
     parser.add_option('--lexemes', dest='lexemes')
     (options, args) = parser.parse_args()
@@ -94,7 +102,8 @@ def get_parameters():
         options.book_address = "Sensei4/"
     else:
         return {'book_address': options.book_address,
-                'search': options.search, 'language': options.language, 'lexemes': options.lexemes}
+                'search': options.search, 'language': options.language,
+                'lexemes': options.lexemes, 'force_index': options.force_index}
 
 
 def main():
@@ -105,10 +114,10 @@ def main():
     search = userParams['search']
     book_address = userParams['book_address']
     language = userParams['language']
-    # lexemes = userParams['lexemes']
-    lexemes = 'y'
+    lexemes = userParams['lexemes']
+    force_index = userParams['force_index']
 
-    with EpubWorker(book_address, language) as worker:
+    with EpubWorker(book_address, language, force_index) as worker:
         if lexemes:
             return worker.search_lexemes(search)
         return worker.search_word(search)
