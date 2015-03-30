@@ -126,3 +126,701 @@ INFO:2015-03-06 14:19:57,512 format: 2.4, revision: 393442, updated: 2015-01-17T
 INFO:2015-03-06 14:19:57,523 Generating is done
 INFO:2015-03-06 14:19:57,523 Making result
 INFO:2015-03-06 14:19:58,856 Result [('аллата', {'results': [{'title': b'', 'highlight': "процесс образования материи Вселенной. Если люди познают суть <b class='match'>аллата</b>, то им откроются огромные ...", 'cfi': '/6/24[id15]!/4/74', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "даст Бог, то с дальнейшим развитием науки, раскрыв тайны <b class='match'>аллата</b>, человек сможет увидеть подлинное ...", 'cfi': '/6/24[id15]!/4/82', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "— ...по существу понятие <b class='match'>аллата</b> едино. Это вообще слово внеземного происхождения. К нам оно ...", 'cfi': '/6/24[id15]!/4/116', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}]}), ('аллаты', {'results': []}), ('аллате', {'results': []}), ('аллату', {'results': []}), ('аллатой', {'results': []}), ('аллатою', {'results': []}), ('аллате', {'results': []}), ('аллаты', {'results': []}), ('аллат', {'results': [{'title': b'', 'highlight': "— Безусловно.   Проявления   <b class='match'>Аллат</b>а   множественны.   В   научном ...", 'cfi': '/6/24[id15]!/4/62', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "<b class='match'>аллат</b> составляет ...", 'cfi': '/6/24[id15]!/4/66/2', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "процесс образования материи Вселенной. Если люди познают суть <b class='match'>аллат</b>а, то им откроются огромные ...", 'cfi': '/6/24[id15]!/4/74', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "даст Бог, то с дальнейшим развитием науки, раскрыв тайны <b class='match'>аллат</b>а, человек сможет увидеть подлинное ...", 'cfi': '/6/24[id15]!/4/82', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "— ...по существу понятие <b class='match'>аллат</b>а едино. Это вообще слово внеземного происхождения. К нам оно ...", 'cfi': '/6/24[id15]!/4/116', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "высокоразвитых цивилизаций. В своей сущности <b class='match'>аллат</b> означает общую единицу — предтечу времени.  ...", 'cfi': '/6/24[id15]!/4/120', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "образования структуры  Вселенной, как <b class='match'>аллат</b>. Более того, земляне были свидетелями и аннигиляции ...", 'cfi': '/6/24[id15]!/4/462', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "в одно и то же время, хотя бы один <b class='match'>аллат</b> в день, — ...", 'cfi': '/6/24[id15]!/4/660', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}, {'title': b'', 'highlight': "последующих трёх <b class='match'>аллат</b>ов, то есть 36 минут ни один бы человек на ...", 'cfi': '/6/24[id15]!/4/664', 'href': b'index_split_011.html', 'baseCfi': '/6/24[id15]!', 'path': b'Sensei4///index_split_011.html'}]}), ('аллатам', {'results': []}), ('аллаты', {'results': []}), ('аллатами', {'results': []}), ('аллатах', {'results': []})]
+INFO:2015-03-28 11:52:01,462 ********************
+INFO:2015-03-28 11:52:01,465 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-28 11:52:01,525 Parsing Manifest
+DEBUG:2015-03-28 11:52:01,526 Parsing TOC
+DEBUG:2015-03-28 11:52:01,528 Parsing Spine
+INFO:2015-03-28 11:52:01,815 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7efd43737b70>
+INFO:2015-03-28 11:52:01,815 Indexing
+DEBUG:2015-03-28 11:52:01,816 openning database indexdir to create
+DEBUG:2015-03-28 11:52:02,284 Indexed:  | ./tmp/Sensei4//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-28 11:52:02,790 Indexed:  | ./tmp/Sensei4//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-28 11:52:03,155 Indexed:  | ./tmp/Sensei4//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-28 11:52:03,711 Indexed:  | ./tmp/Sensei4//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-28 11:52:04,118 Indexed:  | ./tmp/Sensei4//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-28 11:52:04,597 Indexed:  | ./tmp/Sensei4//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-28 11:52:05,026 Indexed:  | ./tmp/Sensei4//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-28 11:52:05,669 Indexed:  | ./tmp/Sensei4//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-28 11:52:06,023 Indexed:  | ./tmp/Sensei4//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-28 11:52:06,411 Indexed:  | ./tmp/Sensei4//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-28 11:52:06,987 Indexed:  | ./tmp/Sensei4//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-28 11:52:07,557 Indexed:  | ./tmp/Sensei4//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-28 11:52:08,108 Indexed:  | ./tmp/Sensei4//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-28 11:52:08,683 Indexed:  | ./tmp/Sensei4//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-28 11:52:09,022 Indexed:  | ./tmp/Sensei4//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-28 11:52:09,552 Indexed:  | ./tmp/Sensei4//index_split_015.html | index_split_015.html | 16
+INFO:2015-03-28 11:52:21,552 Search word аллат
+DEBUG:2015-03-28 11:52:21,552 Q аллат
+DEBUG:2015-03-28 11:52:21,653 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0010321800000383519>
+INFO:2015-03-28 11:53:11,923 ********************
+INFO:2015-03-28 11:53:11,924 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-28 11:53:11,975 Parsing Manifest
+DEBUG:2015-03-28 11:53:11,976 Parsing TOC
+DEBUG:2015-03-28 11:53:11,977 Parsing Spine
+INFO:2015-03-28 11:53:12,213 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fb28575af28>
+INFO:2015-03-28 11:53:12,214 Indexing
+DEBUG:2015-03-28 11:53:12,214 openning database indexdir to create
+DEBUG:2015-03-28 11:53:12,685 Indexed:  | ./tmp/Sensei4//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-28 11:53:13,022 Indexed:  | ./tmp/Sensei4//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-28 11:53:13,514 Indexed:  | ./tmp/Sensei4//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-28 11:53:13,946 Indexed:  | ./tmp/Sensei4//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-28 11:53:14,316 Indexed:  | ./tmp/Sensei4//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-28 11:53:14,692 Indexed:  | ./tmp/Sensei4//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-28 11:53:15,019 Indexed:  | ./tmp/Sensei4//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-28 11:53:15,501 Indexed:  | ./tmp/Sensei4//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-28 11:53:15,844 Indexed:  | ./tmp/Sensei4//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-28 11:53:16,246 Indexed:  | ./tmp/Sensei4//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-28 11:53:16,614 Indexed:  | ./tmp/Sensei4//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-28 11:53:16,970 Indexed:  | ./tmp/Sensei4//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-28 11:53:17,328 Indexed:  | ./tmp/Sensei4//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-28 11:53:17,818 Indexed:  | ./tmp/Sensei4//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-28 11:53:18,191 Indexed:  | ./tmp/Sensei4//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-28 11:53:18,573 Indexed:  | ./tmp/Sensei4//index_split_015.html | index_split_015.html | 16
+INFO:2015-03-28 11:53:29,599 Generate words for search
+INFO:2015-03-28 11:53:29,659 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-28 11:53:29,661 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-28 11:53:29,886 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-28 11:53:29,900 Search word аллат and lexemes
+DEBUG:2015-03-28 11:53:29,900 Q аллата
+DEBUG:2015-03-28 11:53:29,924 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.0012039879993608338>
+DEBUG:2015-03-28 11:53:30,312 Q аллаты
+DEBUG:2015-03-28 11:53:30,322 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.0002609249995657592>
+DEBUG:2015-03-28 11:53:30,323 Q аллате
+DEBUG:2015-03-28 11:53:30,332 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0008339010000781855>
+DEBUG:2015-03-28 11:53:30,474 Q аллату
+DEBUG:2015-03-28 11:53:30,481 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.0007859199995436938>
+DEBUG:2015-03-28 11:53:30,627 Q аллатой
+DEBUG:2015-03-28 11:53:30,634 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.00024758600011409726>
+DEBUG:2015-03-28 11:53:30,635 Q аллатою
+DEBUG:2015-03-28 11:53:30,644 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.0001910150003823219>
+DEBUG:2015-03-28 11:53:30,645 Q аллате
+DEBUG:2015-03-28 11:53:30,654 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0008244020000347518>
+DEBUG:2015-03-28 11:53:30,768 Q аллаты
+DEBUG:2015-03-28 11:53:30,774 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.0001440819996787468>
+DEBUG:2015-03-28 11:53:30,775 Q аллат
+DEBUG:2015-03-28 11:53:30,781 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0008371140002054744>
+DEBUG:2015-03-28 11:53:31,059 Q аллатам
+DEBUG:2015-03-28 11:53:31,066 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.0001954850004040054>
+DEBUG:2015-03-28 11:53:31,067 Q аллаты
+DEBUG:2015-03-28 11:53:31,076 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00021413200011011213>
+DEBUG:2015-03-28 11:53:31,076 Q аллатами
+DEBUG:2015-03-28 11:53:31,085 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.0001854270003605052>
+DEBUG:2015-03-28 11:53:31,085 Q аллатах
+DEBUG:2015-03-28 11:53:31,094 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.000363940999704937>
+INFO:2015-03-28 11:55:37,578 ********************
+INFO:2015-03-28 11:55:37,580 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-28 11:55:37,647 Parsing Manifest
+DEBUG:2015-03-28 11:55:37,648 Parsing TOC
+DEBUG:2015-03-28 11:55:37,649 Parsing Spine
+INFO:2015-03-28 11:55:37,885 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f909c1dbf98>
+INFO:2015-03-28 11:55:37,885 Indexing
+DEBUG:2015-03-28 11:55:37,886 openning database indexdir to create
+DEBUG:2015-03-28 11:55:38,268 Indexed:  | ./tmp/Sensei4//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-28 11:55:38,742 Indexed:  | ./tmp/Sensei4//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-28 11:55:39,175 Indexed:  | ./tmp/Sensei4//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-28 11:55:39,610 Indexed:  | ./tmp/Sensei4//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-28 11:55:39,992 Indexed:  | ./tmp/Sensei4//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-28 11:55:40,416 Indexed:  | ./tmp/Sensei4//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-28 11:55:40,820 Indexed:  | ./tmp/Sensei4//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-28 11:55:41,267 Indexed:  | ./tmp/Sensei4//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-28 11:55:41,725 Indexed:  | ./tmp/Sensei4//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-28 11:55:42,191 Indexed:  | ./tmp/Sensei4//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-28 11:55:42,696 Indexed:  | ./tmp/Sensei4//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-28 11:55:43,035 Indexed:  | ./tmp/Sensei4//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-28 11:55:43,476 Indexed:  | ./tmp/Sensei4//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-28 11:55:43,870 Indexed:  | ./tmp/Sensei4//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-28 11:55:44,331 Indexed:  | ./tmp/Sensei4//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-28 11:55:44,802 Indexed:  | ./tmp/Sensei4//index_split_015.html | index_split_015.html | 16
+INFO:2015-03-28 11:55:59,636 Generate words for search
+INFO:2015-03-28 11:55:59,685 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-28 11:55:59,688 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-28 11:55:59,930 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-28 11:55:59,961 Search word аллат and lexemes
+DEBUG:2015-03-28 11:55:59,962 Q аллата
+DEBUG:2015-03-28 11:55:59,991 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.0012040579995300504>
+DEBUG:2015-03-28 11:56:00,431 Q аллаты
+DEBUG:2015-03-28 11:56:00,438 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.0001674779996392317>
+DEBUG:2015-03-28 11:56:00,439 Q аллате
+DEBUG:2015-03-28 11:56:00,448 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0012134859998695902>
+DEBUG:2015-03-28 11:56:00,618 Q аллату
+DEBUG:2015-03-28 11:56:00,630 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.0014093910003794008>
+DEBUG:2015-03-28 11:56:00,821 Q аллатой
+DEBUG:2015-03-28 11:56:00,830 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.0002226530004918459>
+DEBUG:2015-03-28 11:56:00,831 Q аллатою
+DEBUG:2015-03-28 11:56:00,839 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.00018542799989518244>
+DEBUG:2015-03-28 11:56:00,840 Q аллате
+DEBUG:2015-03-28 11:56:00,849 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0012044069999319618>
+DEBUG:2015-03-28 11:56:01,035 Q аллаты
+DEBUG:2015-03-28 11:56:01,044 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.0002241199999843957>
+DEBUG:2015-03-28 11:56:01,045 Q аллат
+DEBUG:2015-03-28 11:56:01,054 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0012837459998991108>
+DEBUG:2015-03-28 11:56:01,387 Q аллатам
+DEBUG:2015-03-28 11:56:01,395 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.00021517999994102865>
+DEBUG:2015-03-28 11:56:01,396 Q аллаты
+DEBUG:2015-03-28 11:56:01,405 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.0002649060006660875>
+DEBUG:2015-03-28 11:56:01,406 Q аллатами
+DEBUG:2015-03-28 11:56:01,415 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.00019995399998151697>
+DEBUG:2015-03-28 11:56:01,416 Q аллатах
+DEBUG:2015-03-28 11:56:01,425 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.0005105369991724729>
+DEBUG:2015-03-30 16:26:46,636 Parsing Manifest
+DEBUG:2015-03-30 16:26:46,641 Parsing TOC
+DEBUG:2015-03-30 16:26:46,643 Parsing Spine
+DEBUG:2015-03-30 16:26:46,655 Parsing Manifest
+DEBUG:2015-03-30 16:26:46,658 Parsing TOC
+DEBUG:2015-03-30 16:26:46,659 Parsing Spine
+DEBUG:2015-03-30 16:27:52,664 Parsing Manifest
+DEBUG:2015-03-30 16:27:52,665 Parsing TOC
+DEBUG:2015-03-30 16:27:52,667 Parsing Spine
+INFO:2015-03-30 16:27:52,900 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f84543208d0>
+INFO:2015-03-30 16:27:52,901 Indexing
+INFO:2015-03-30 16:27:52,902 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:27:52,949 Parsing Manifest
+DEBUG:2015-03-30 16:27:52,950 Parsing TOC
+DEBUG:2015-03-30 16:27:52,951 Parsing Spine
+INFO:2015-03-30 16:27:52,953 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f84543207b8>
+INFO:2015-03-30 16:27:52,953 Indexing
+INFO:2015-03-30 16:27:52,954 Search word хряк
+DEBUG:2015-03-30 16:27:52,954 Q хряк
+DEBUG:2015-03-30 16:27:52,994 Hits <Top 0 Results for Term('content', 'хряк') runtime=0.0001940829988598125>
+INFO:2015-03-30 16:27:52,996 Search word аллат
+DEBUG:2015-03-30 16:27:52,996 Q аллат
+DEBUG:2015-03-30 16:27:53,005 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0009252969994122395>
+DEBUG:2015-03-30 16:27:53,245 Parsing Manifest
+DEBUG:2015-03-30 16:27:53,246 Parsing TOC
+DEBUG:2015-03-30 16:27:53,247 Parsing Spine
+INFO:2015-03-30 16:27:53,249 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f84543328d0>
+INFO:2015-03-30 16:27:53,249 Indexing
+INFO:2015-03-30 16:27:53,250 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:27:53,306 Parsing Manifest
+DEBUG:2015-03-30 16:27:53,307 Parsing TOC
+DEBUG:2015-03-30 16:27:53,308 Parsing Spine
+INFO:2015-03-30 16:27:53,309 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f8452e627b8>
+INFO:2015-03-30 16:27:53,310 Indexing
+INFO:2015-03-30 16:27:53,311 Search word хряк
+DEBUG:2015-03-30 16:27:53,311 Q хряк
+DEBUG:2015-03-30 16:27:53,318 Hits <Top 0 Results for Term('content', 'хряк') runtime=0.0001565790007589385>
+INFO:2015-03-30 16:27:53,319 Search word аллат
+DEBUG:2015-03-30 16:27:53,319 Q аллат
+DEBUG:2015-03-30 16:27:53,328 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0010632989997247932>
+DEBUG:2015-03-30 16:28:39,111 Parsing Manifest
+DEBUG:2015-03-30 16:28:39,112 Parsing TOC
+DEBUG:2015-03-30 16:28:39,114 Parsing Spine
+INFO:2015-03-30 16:28:39,306 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f0de4621898>
+INFO:2015-03-30 16:28:39,307 Indexing
+INFO:2015-03-30 16:28:39,308 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:28:39,395 Parsing Manifest
+DEBUG:2015-03-30 16:28:39,396 Parsing TOC
+DEBUG:2015-03-30 16:28:39,397 Parsing Spine
+INFO:2015-03-30 16:28:39,402 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f0de3f23f28>
+INFO:2015-03-30 16:28:39,403 Indexing
+INFO:2015-03-30 16:28:39,404 Search word хряк
+DEBUG:2015-03-30 16:28:39,405 Q хряк
+DEBUG:2015-03-30 16:28:39,512 Hits <Top 0 Results for Term('content', 'хряк') runtime=0.00029779299984511454>
+INFO:2015-03-30 16:28:39,513 Search word аллат
+DEBUG:2015-03-30 16:28:39,514 Q аллат
+DEBUG:2015-03-30 16:28:39,530 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0014453180010605138>
+DEBUG:2015-03-30 16:28:39,831 Parsing Manifest
+DEBUG:2015-03-30 16:28:39,832 Parsing TOC
+DEBUG:2015-03-30 16:28:39,832 Parsing Spine
+INFO:2015-03-30 16:28:39,834 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f0de4633a90>
+INFO:2015-03-30 16:28:39,834 Indexing
+INFO:2015-03-30 16:28:39,836 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:28:39,893 Parsing Manifest
+DEBUG:2015-03-30 16:28:39,894 Parsing TOC
+DEBUG:2015-03-30 16:28:39,895 Parsing Spine
+INFO:2015-03-30 16:28:39,896 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f0de4633898>
+INFO:2015-03-30 16:28:39,896 Indexing
+INFO:2015-03-30 16:28:39,897 Search word хряк
+DEBUG:2015-03-30 16:28:39,898 Q хряк
+DEBUG:2015-03-30 16:28:39,904 Hits <Top 0 Results for Term('content', 'хряк') runtime=0.0001455450001230929>
+INFO:2015-03-30 16:28:39,905 Search word аллат
+DEBUG:2015-03-30 16:28:39,905 Q аллат
+DEBUG:2015-03-30 16:28:39,912 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0007577529995614896>
+INFO:2015-03-30 16:28:47,734 ********************
+INFO:2015-03-30 16:28:47,735 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:28:47,808 Parsing Manifest
+DEBUG:2015-03-30 16:28:47,810 Parsing TOC
+DEBUG:2015-03-30 16:28:47,811 Parsing Spine
+INFO:2015-03-30 16:28:48,034 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f7dbc035fd0>
+INFO:2015-03-30 16:28:48,034 Indexing
+INFO:2015-03-30 16:28:48,036 Generate words for search
+INFO:2015-03-30 16:28:48,079 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:28:48,081 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:28:48,241 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:28:48,255 Search word аллат and lexemes
+DEBUG:2015-03-30 16:28:48,255 Q аллата
+DEBUG:2015-03-30 16:28:48,279 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.0010006529992097057>
+DEBUG:2015-03-30 16:28:48,614 Q аллаты
+DEBUG:2015-03-30 16:28:48,622 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00017292099983023945>
+DEBUG:2015-03-30 16:28:48,622 Q аллате
+DEBUG:2015-03-30 16:28:48,632 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007843620005587582>
+DEBUG:2015-03-30 16:28:48,773 Q аллату
+DEBUG:2015-03-30 16:28:48,780 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.0007527950001531281>
+DEBUG:2015-03-30 16:28:48,891 Q аллатой
+DEBUG:2015-03-30 16:28:48,897 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.00013199499881011434>
+DEBUG:2015-03-30 16:28:48,898 Q аллатою
+DEBUG:2015-03-30 16:28:48,904 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.0001257799995073583>
+DEBUG:2015-03-30 16:28:48,905 Q аллате
+DEBUG:2015-03-30 16:28:48,911 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007579630000691395>
+DEBUG:2015-03-30 16:28:49,028 Q аллаты
+DEBUG:2015-03-30 16:28:49,034 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013604599917016458>
+DEBUG:2015-03-30 16:28:49,035 Q аллат
+DEBUG:2015-03-30 16:28:49,042 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0007709519995842129>
+DEBUG:2015-03-30 16:28:49,257 Q аллатам
+DEBUG:2015-03-30 16:28:49,263 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.00011677099973894656>
+DEBUG:2015-03-30 16:28:49,264 Q аллаты
+DEBUG:2015-03-30 16:28:49,270 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013639600001624785>
+DEBUG:2015-03-30 16:28:49,271 Q аллатами
+DEBUG:2015-03-30 16:28:49,277 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.00011900599929504097>
+DEBUG:2015-03-30 16:28:49,277 Q аллатах
+DEBUG:2015-03-30 16:28:49,283 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.00020979600049031433>
+INFO:2015-03-30 16:28:53,677 ********************
+INFO:2015-03-30 16:28:53,679 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:28:53,738 Parsing Manifest
+DEBUG:2015-03-30 16:28:53,739 Parsing TOC
+DEBUG:2015-03-30 16:28:53,740 Parsing Spine
+INFO:2015-03-30 16:28:53,966 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fb612791fd0>
+INFO:2015-03-30 16:28:53,966 Indexing
+INFO:2015-03-30 16:28:53,967 Generate words for search
+INFO:2015-03-30 16:28:53,995 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:28:53,997 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:28:54,128 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:28:54,138 Search word аллат and lexemes
+DEBUG:2015-03-30 16:28:54,152 Q аллата
+DEBUG:2015-03-30 16:28:54,177 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.0010336180002923356>
+DEBUG:2015-03-30 16:28:54,518 Q аллаты
+DEBUG:2015-03-30 16:28:54,525 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013450999904307537>
+DEBUG:2015-03-30 16:28:54,525 Q аллате
+DEBUG:2015-03-30 16:28:54,532 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007332400000450434>
+DEBUG:2015-03-30 16:28:54,647 Q аллату
+DEBUG:2015-03-30 16:28:54,657 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.001122940999266575>
+DEBUG:2015-03-30 16:28:54,805 Q аллатой
+DEBUG:2015-03-30 16:28:54,812 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.00016747399968153331>
+DEBUG:2015-03-30 16:28:54,813 Q аллатою
+DEBUG:2015-03-30 16:28:54,820 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.00012647800031118095>
+DEBUG:2015-03-30 16:28:54,820 Q аллате
+DEBUG:2015-03-30 16:28:54,828 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0008810189992800588>
+DEBUG:2015-03-30 16:28:55,021 Q аллаты
+DEBUG:2015-03-30 16:28:55,031 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00023500899987993762>
+DEBUG:2015-03-30 16:28:55,032 Q аллат
+DEBUG:2015-03-30 16:28:55,042 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0013453089995891787>
+DEBUG:2015-03-30 16:28:55,330 Q аллатам
+DEBUG:2015-03-30 16:28:55,336 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.0001167010013887193>
+DEBUG:2015-03-30 16:28:55,337 Q аллаты
+DEBUG:2015-03-30 16:28:55,343 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00018032399930234533>
+DEBUG:2015-03-30 16:28:55,344 Q аллатами
+DEBUG:2015-03-30 16:28:55,351 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.00011774799895647448>
+DEBUG:2015-03-30 16:28:55,352 Q аллатах
+DEBUG:2015-03-30 16:28:55,358 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.00020770099945366383>
+INFO:2015-03-30 16:38:47,440 ********************
+INFO:2015-03-30 16:38:47,443 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:38:47,503 Parsing Manifest
+DEBUG:2015-03-30 16:38:47,504 Parsing TOC
+DEBUG:2015-03-30 16:38:47,506 Parsing Spine
+INFO:2015-03-30 16:38:47,717 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f93963d1828>
+INFO:2015-03-30 16:38:47,718 Indexing
+INFO:2015-03-30 16:38:47,719 Generate words for search
+INFO:2015-03-30 16:38:47,764 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:38:47,766 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:38:47,977 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:38:47,991 Search word аллат and lexemes
+DEBUG:2015-03-30 16:38:47,992 Q аллата
+DEBUG:2015-03-30 16:38:48,047 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.001409566999427625>
+DEBUG:2015-03-30 16:38:48,389 Q аллаты
+DEBUG:2015-03-30 16:38:48,396 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013625599967781454>
+DEBUG:2015-03-30 16:38:48,397 Q аллате
+DEBUG:2015-03-30 16:38:48,404 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007416940006805817>
+DEBUG:2015-03-30 16:38:48,510 Q аллату
+DEBUG:2015-03-30 16:38:48,517 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.0008130690002872143>
+DEBUG:2015-03-30 16:38:48,637 Q аллатой
+DEBUG:2015-03-30 16:38:48,646 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.00019038199934584554>
+DEBUG:2015-03-30 16:38:48,646 Q аллатою
+DEBUG:2015-03-30 16:38:48,653 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.00017075699906854425>
+DEBUG:2015-03-30 16:38:48,654 Q аллате
+DEBUG:2015-03-30 16:38:48,665 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0011201529996469617>
+DEBUG:2015-03-30 16:38:48,815 Q аллаты
+DEBUG:2015-03-30 16:38:48,821 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013234499965619761>
+DEBUG:2015-03-30 16:38:48,822 Q аллат
+DEBUG:2015-03-30 16:38:48,829 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.000752169000406866>
+DEBUG:2015-03-30 16:38:49,045 Q аллатам
+DEBUG:2015-03-30 16:38:49,052 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.00012955200145370327>
+DEBUG:2015-03-30 16:38:49,052 Q аллаты
+DEBUG:2015-03-30 16:38:49,058 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013171700084058102>
+DEBUG:2015-03-30 16:38:49,059 Q аллатами
+DEBUG:2015-03-30 16:38:49,065 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.00011390800136723556>
+DEBUG:2015-03-30 16:38:49,066 Q аллатах
+DEBUG:2015-03-30 16:38:49,072 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.0002072829993267078>
+INFO:2015-03-30 16:39:00,187 ********************
+INFO:2015-03-30 16:39:00,189 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:39:00,242 Parsing Manifest
+DEBUG:2015-03-30 16:39:00,243 Parsing TOC
+DEBUG:2015-03-30 16:39:00,244 Parsing Spine
+ERROR:2015-03-30 16:39:00,389 openning database indexdir failed
+INFO:2015-03-30 16:39:00,390 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f1b489d3828>
+INFO:2015-03-30 16:39:00,390 Indexing
+DEBUG:2015-03-30 16:39:00,390 openning database indexdir to create
+DEBUG:2015-03-30 16:39:00,794 Indexed:  | ./tmp/Sensei4//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-30 16:39:01,125 Indexed:  | ./tmp/Sensei4//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-30 16:39:01,460 Indexed:  | ./tmp/Sensei4//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-30 16:39:01,888 Indexed:  | ./tmp/Sensei4//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-30 16:39:02,332 Indexed:  | ./tmp/Sensei4//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-30 16:39:02,726 Indexed:  | ./tmp/Sensei4//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-30 16:39:03,108 Indexed:  | ./tmp/Sensei4//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-30 16:39:03,504 Indexed:  | ./tmp/Sensei4//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-30 16:39:03,975 Indexed:  | ./tmp/Sensei4//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-30 16:39:04,274 Indexed:  | ./tmp/Sensei4//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-30 16:39:04,561 Indexed:  | ./tmp/Sensei4//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-30 16:39:04,926 Indexed:  | ./tmp/Sensei4//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-30 16:39:05,210 Indexed:  | ./tmp/Sensei4//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-30 16:39:05,540 Indexed:  | ./tmp/Sensei4//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-30 16:39:05,879 Indexed:  | ./tmp/Sensei4//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-30 16:39:06,173 Indexed:  | ./tmp/Sensei4//index_split_015.html | index_split_015.html | 16
+INFO:2015-03-30 16:39:14,395 Generate words for search
+INFO:2015-03-30 16:39:14,425 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:39:14,427 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:39:14,613 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:39:14,622 Search word аллат and lexemes
+DEBUG:2015-03-30 16:39:14,622 Q аллата
+DEBUG:2015-03-30 16:39:14,683 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.001702612000372028>
+DEBUG:2015-03-30 16:39:15,016 Q аллаты
+DEBUG:2015-03-30 16:39:15,022 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.000141423999593826>
+DEBUG:2015-03-30 16:39:15,022 Q аллате
+DEBUG:2015-03-30 16:39:15,029 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007708859993726946>
+DEBUG:2015-03-30 16:39:15,136 Q аллату
+DEBUG:2015-03-30 16:39:15,142 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.000747838999814121>
+DEBUG:2015-03-30 16:39:15,256 Q аллатой
+DEBUG:2015-03-30 16:39:15,262 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.00015909400099189952>
+DEBUG:2015-03-30 16:39:15,263 Q аллатою
+DEBUG:2015-03-30 16:39:15,268 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.0001146060003520688>
+DEBUG:2015-03-30 16:39:15,269 Q аллате
+DEBUG:2015-03-30 16:39:15,275 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007255600012285868>
+DEBUG:2015-03-30 16:39:15,383 Q аллаты
+DEBUG:2015-03-30 16:39:15,389 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.0001910800001496682>
+DEBUG:2015-03-30 16:39:15,389 Q аллат
+DEBUG:2015-03-30 16:39:15,396 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0008423310009675333>
+DEBUG:2015-03-30 16:39:15,665 Q аллатам
+DEBUG:2015-03-30 16:39:15,675 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.00017208400095114484>
+DEBUG:2015-03-30 16:39:15,676 Q аллаты
+DEBUG:2015-03-30 16:39:15,683 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.0001954099989234237>
+DEBUG:2015-03-30 16:39:15,684 Q аллатами
+DEBUG:2015-03-30 16:39:15,690 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.0001736900012474507>
+DEBUG:2015-03-30 16:39:15,690 Q аллатах
+DEBUG:2015-03-30 16:39:15,700 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.00034619299913174473>
+INFO:2015-03-30 16:39:19,946 ********************
+INFO:2015-03-30 16:39:19,947 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:39:19,994 Parsing Manifest
+DEBUG:2015-03-30 16:39:19,995 Parsing TOC
+DEBUG:2015-03-30 16:39:19,995 Parsing Spine
+INFO:2015-03-30 16:39:20,138 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f1016cca828>
+INFO:2015-03-30 16:39:20,138 Indexing
+INFO:2015-03-30 16:39:20,139 Generate words for search
+INFO:2015-03-30 16:39:20,164 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:39:20,166 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:39:20,329 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:39:20,338 Search word аллат and lexemes
+DEBUG:2015-03-30 16:39:20,338 Q аллата
+DEBUG:2015-03-30 16:39:20,361 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.0009394079988851445>
+DEBUG:2015-03-30 16:39:20,779 Q аллаты
+DEBUG:2015-03-30 16:39:20,785 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00015623000035702717>
+DEBUG:2015-03-30 16:39:20,786 Q аллате
+DEBUG:2015-03-30 16:39:20,792 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007830380000086734>
+DEBUG:2015-03-30 16:39:20,899 Q аллату
+DEBUG:2015-03-30 16:39:20,906 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.0007523090007452993>
+DEBUG:2015-03-30 16:39:21,014 Q аллатой
+DEBUG:2015-03-30 16:39:21,020 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.00013506899995263666>
+DEBUG:2015-03-30 16:39:21,020 Q аллатою
+DEBUG:2015-03-30 16:39:21,027 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.00013360199955059215>
+DEBUG:2015-03-30 16:39:21,028 Q аллате
+DEBUG:2015-03-30 16:39:21,034 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007250020007631974>
+DEBUG:2015-03-30 16:39:21,154 Q аллаты
+DEBUG:2015-03-30 16:39:21,160 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013576799938164186>
+DEBUG:2015-03-30 16:39:21,161 Q аллат
+DEBUG:2015-03-30 16:39:21,168 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.0011360749995219521>
+DEBUG:2015-03-30 16:39:21,391 Q аллатам
+DEBUG:2015-03-30 16:39:21,397 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.00011977400026808027>
+DEBUG:2015-03-30 16:39:21,397 Q аллаты
+DEBUG:2015-03-30 16:39:21,403 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.0001389799999742536>
+DEBUG:2015-03-30 16:39:21,404 Q аллатами
+DEBUG:2015-03-30 16:39:21,410 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.00011837700003525242>
+DEBUG:2015-03-30 16:39:21,411 Q аллатах
+DEBUG:2015-03-30 16:39:21,417 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.0002071430008072639>
+INFO:2015-03-30 16:41:47,503 ********************
+INFO:2015-03-30 16:41:47,506 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/AllatRa_Anastasia_Novykh.epub
+DEBUG:2015-03-30 16:41:48,332 Parsing Manifest
+DEBUG:2015-03-30 16:41:48,375 Parsing TOC
+DEBUG:2015-03-30 16:41:48,463 Parsing Spine
+INFO:2015-03-30 16:41:48,692 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f3e3a57bf60>
+INFO:2015-03-30 16:41:48,693 Indexing
+INFO:2015-03-30 16:41:48,694 Generate words for search
+INFO:2015-03-30 16:41:48,768 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:41:48,773 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:41:49,094 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:41:49,117 Search word аллат and lexemes
+DEBUG:2015-03-30 16:41:49,118 Q аллата
+DEBUG:2015-03-30 16:41:49,186 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.0016436709993286058>
+INFO:2015-03-30 16:45:43,596 ********************
+INFO:2015-03-30 16:45:43,598 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/AllatRa_Anastasia_Novykh.epub
+DEBUG:2015-03-30 16:45:44,430 Parsing Manifest
+DEBUG:2015-03-30 16:45:44,445 Parsing TOC
+DEBUG:2015-03-30 16:45:44,447 Parsing Spine
+ERROR:2015-03-30 16:45:44,582 openning database AllatRa_Anastasia_Novykh failed
+INFO:2015-03-30 16:45:44,582 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fca7dff0f60>
+INFO:2015-03-30 16:45:44,600 Indexing
+DEBUG:2015-03-30 16:45:44,600 openning database AllatRa_Anastasia_Novykh to create
+DEBUG:2015-03-30 16:45:45,234 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-30 16:45:45,745 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-30 16:45:46,253 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-30 16:45:46,797 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-30 16:45:47,306 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-30 16:45:47,848 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-30 16:45:48,413 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-30 16:45:49,096 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-30 16:45:49,602 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-30 16:45:50,164 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-30 16:45:50,866 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-30 16:45:51,379 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-30 16:45:52,004 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-30 16:45:53,114 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-30 16:45:53,636 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-30 16:45:54,193 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_015.html | index_split_015.html | 16
+DEBUG:2015-03-30 16:45:54,376 Indexed:  | ./tmp/AllatRa_Anastasia_Novykh//index_split_016.html | index_split_016.html | 17
+INFO:2015-03-30 16:46:04,407 Generate words for search
+INFO:2015-03-30 16:46:04,459 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:46:04,461 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:46:04,668 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:46:04,686 Search word аллат and lexemes
+DEBUG:2015-03-30 16:46:04,687 Q аллата
+DEBUG:2015-03-30 16:46:04,733 Hits <Top 15 Results for Term('content', 'аллата') runtime=0.0018073499995807651>
+INFO:2015-03-30 16:47:24,140 ********************
+INFO:2015-03-30 16:47:24,141 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/AllatRa_Anastasia_Novykh.epub
+DEBUG:2015-03-30 16:47:25,042 Parsing Manifest
+DEBUG:2015-03-30 16:47:25,058 Parsing TOC
+DEBUG:2015-03-30 16:47:25,059 Parsing Spine
+INFO:2015-03-30 16:47:25,196 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f1f5b0a7f60>
+INFO:2015-03-30 16:47:25,196 Indexing
+INFO:2015-03-30 16:47:25,197 Generate words for search
+INFO:2015-03-30 16:47:25,227 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:47:25,228 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:47:25,423 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:47:25,438 Search word аллат and lexemes
+DEBUG:2015-03-30 16:47:25,439 Q аллата
+DEBUG:2015-03-30 16:47:25,476 Hits <Top 15 Results for Term('content', 'аллата') runtime=0.0013683930010301992>
+INFO:2015-03-30 16:47:54,717 ********************
+INFO:2015-03-30 16:47:54,719 Uncompress .test_data/Sensei4.epub
+INFO:2015-03-30 16:48:01,503 ********************
+INFO:2015-03-30 16:48:01,505 Uncompress ./test_data/Sensei4.epub
+DEBUG:2015-03-30 16:48:01,589 Parsing Manifest
+DEBUG:2015-03-30 16:48:01,590 Parsing TOC
+DEBUG:2015-03-30 16:48:01,606 Parsing Spine
+ERROR:2015-03-30 16:48:01,944 openning database Sensei4 failed
+INFO:2015-03-30 16:48:01,944 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7f1af4802828>
+INFO:2015-03-30 16:48:01,945 Indexing
+DEBUG:2015-03-30 16:48:01,946 openning database Sensei4 to create
+DEBUG:2015-03-30 16:48:02,323 Indexed:  | ./tmp/Sensei4//index_split_000.html | index_split_000.html | 1
+DEBUG:2015-03-30 16:48:02,697 Indexed:  | ./tmp/Sensei4//index_split_001.html | index_split_001.html | 2
+DEBUG:2015-03-30 16:48:03,115 Indexed:  | ./tmp/Sensei4//index_split_002.html | index_split_002.html | 3
+DEBUG:2015-03-30 16:48:03,458 Indexed:  | ./tmp/Sensei4//index_split_003.html | index_split_003.html | 4
+DEBUG:2015-03-30 16:48:03,889 Indexed:  | ./tmp/Sensei4//index_split_004.html | index_split_004.html | 5
+DEBUG:2015-03-30 16:48:04,296 Indexed:  | ./tmp/Sensei4//index_split_005.html | index_split_005.html | 6
+DEBUG:2015-03-30 16:48:04,768 Indexed:  | ./tmp/Sensei4//index_split_006.html | index_split_006.html | 7
+DEBUG:2015-03-30 16:48:05,360 Indexed:  | ./tmp/Sensei4//index_split_007.html | index_split_007.html | 8
+DEBUG:2015-03-30 16:48:05,756 Indexed:  | ./tmp/Sensei4//index_split_008.html | index_split_008.html | 9
+DEBUG:2015-03-30 16:48:06,162 Indexed:  | ./tmp/Sensei4//index_split_009.html | index_split_009.html | 10
+DEBUG:2015-03-30 16:48:06,595 Indexed:  | ./tmp/Sensei4//index_split_010.html | index_split_010.html | 11
+DEBUG:2015-03-30 16:48:06,944 Indexed:  | ./tmp/Sensei4//index_split_011.html | index_split_011.html | 12
+DEBUG:2015-03-30 16:48:07,284 Indexed:  | ./tmp/Sensei4//index_split_012.html | index_split_012.html | 13
+DEBUG:2015-03-30 16:48:07,781 Indexed:  | ./tmp/Sensei4//index_split_013.html | index_split_013.html | 14
+DEBUG:2015-03-30 16:48:08,132 Indexed:  | ./tmp/Sensei4//index_split_014.html | index_split_014.html | 15
+DEBUG:2015-03-30 16:48:08,549 Indexed:  | ./tmp/Sensei4//index_split_015.html | index_split_015.html | 16
+INFO:2015-03-30 16:48:17,407 Generate words for search
+INFO:2015-03-30 16:48:17,444 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:48:17,446 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:48:17,660 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:48:17,686 Search word аллат and lexemes
+DEBUG:2015-03-30 16:48:17,686 Q аллата
+DEBUG:2015-03-30 16:48:17,729 Hits <Top 3 Results for Term('content', 'аллата') runtime=0.0012148109999543522>
+DEBUG:2015-03-30 16:48:18,111 Q аллаты
+DEBUG:2015-03-30 16:48:18,117 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00014254499910748564>
+DEBUG:2015-03-30 16:48:18,118 Q аллате
+DEBUG:2015-03-30 16:48:18,124 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.000716705000741058>
+DEBUG:2015-03-30 16:48:18,236 Q аллату
+DEBUG:2015-03-30 16:48:18,242 Hits <Top 1 Results for Term('content', 'аллату') runtime=0.0007855679996282561>
+DEBUG:2015-03-30 16:48:18,354 Q аллатой
+DEBUG:2015-03-30 16:48:18,359 Hits <Top 0 Results for Term('content', 'аллатой') runtime=0.000132348999613896>
+DEBUG:2015-03-30 16:48:18,360 Q аллатою
+DEBUG:2015-03-30 16:48:18,366 Hits <Top 0 Results for Term('content', 'аллатою') runtime=0.00011844900109281298>
+DEBUG:2015-03-30 16:48:18,366 Q аллате
+DEBUG:2015-03-30 16:48:18,372 Hits <Top 1 Results for Term('content', 'аллате') runtime=0.0007443630001944257>
+DEBUG:2015-03-30 16:48:18,480 Q аллаты
+DEBUG:2015-03-30 16:48:18,486 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013625999963551294>
+DEBUG:2015-03-30 16:48:18,487 Q аллат
+DEBUG:2015-03-30 16:48:18,493 Hits <Top 2 Results for Term('content', 'аллат') runtime=0.000788850999015267>
+DEBUG:2015-03-30 16:48:18,769 Q аллатам
+DEBUG:2015-03-30 16:48:18,775 Hits <Top 0 Results for Term('content', 'аллатам') runtime=0.00011907900079677347>
+DEBUG:2015-03-30 16:48:18,776 Q аллаты
+DEBUG:2015-03-30 16:48:18,781 Hits <Top 0 Results for Term('content', 'аллаты') runtime=0.00013465300071402453>
+DEBUG:2015-03-30 16:48:18,782 Q аллатами
+DEBUG:2015-03-30 16:48:18,787 Hits <Top 0 Results for Term('content', 'аллатами') runtime=0.0001166340007330291>
+DEBUG:2015-03-30 16:48:18,788 Q аллатах
+DEBUG:2015-03-30 16:48:18,794 Hits <Top 0 Results for Term('content', 'аллатах') runtime=0.0002059600010397844>
+INFO:2015-03-30 16:48:58,989 ********************
+INFO:2015-03-30 16:48:58,991 Uncompress /home/infernion/Dev/learn/allatra_book_project/allatra_book_web/allatra_book/static/moby-dick.epub
+DEBUG:2015-03-30 16:48:59,181 Parsing Manifest
+DEBUG:2015-03-30 16:48:59,188 Parsing TOC
+DEBUG:2015-03-30 16:48:59,203 Parsing Spine
+ERROR:2015-03-30 16:48:59,387 openning database moby-dick failed
+INFO:2015-03-30 16:48:59,388 <epubsearch.search_engines.whooshengine.WhooshEngine object at 0x7fa842a1e208>
+INFO:2015-03-30 16:48:59,388 Indexing
+DEBUG:2015-03-30 16:48:59,388 openning database moby-dick to create
+DEBUG:2015-03-30 16:48:59,415 Indexed:  | ./tmp/moby-dick/OPS/cover.xhtml | cover.xhtml | 1
+DEBUG:2015-03-30 16:48:59,419 Indexed:  | ./tmp/moby-dick/OPS/titlepage.xhtml | titlepage.xhtml | 2
+DEBUG:2015-03-30 16:48:59,429 Indexed:  | ./tmp/moby-dick/OPS/toc-short.xhtml | toc-short.xhtml | 3
+DEBUG:2015-03-30 16:48:59,437 Indexed:  | ./tmp/moby-dick/OPS/preface_001.xhtml | preface_001.xhtml | 4
+DEBUG:2015-03-30 16:48:59,453 Indexed:  | ./tmp/moby-dick/OPS/introduction_001.xhtml | introduction_001.xhtml | 5
+DEBUG:2015-03-30 16:48:59,568 Indexed:  | ./tmp/moby-dick/OPS/epigraph_001.xhtml | epigraph_001.xhtml | 6
+DEBUG:2015-03-30 16:48:59,624 Indexed:  | ./tmp/moby-dick/OPS/chapter_001.xhtml | chapter_001.xhtml | 7
+DEBUG:2015-03-30 16:48:59,659 Indexed:  | ./tmp/moby-dick/OPS/chapter_002.xhtml | chapter_002.xhtml | 8
+DEBUG:2015-03-30 16:48:59,783 Indexed:  | ./tmp/moby-dick/OPS/chapter_003.xhtml | chapter_003.xhtml | 9
+DEBUG:2015-03-30 16:48:59,816 Indexed:  | ./tmp/moby-dick/OPS/chapter_004.xhtml | chapter_004.xhtml | 10
+DEBUG:2015-03-30 16:48:59,841 Indexed:  | ./tmp/moby-dick/OPS/chapter_005.xhtml | chapter_005.xhtml | 11
+DEBUG:2015-03-30 16:48:59,869 Indexed:  | ./tmp/moby-dick/OPS/chapter_006.xhtml | chapter_006.xhtml | 12
+DEBUG:2015-03-30 16:48:59,897 Indexed:  | ./tmp/moby-dick/OPS/chapter_007.xhtml | chapter_007.xhtml | 13
+DEBUG:2015-03-30 16:48:59,929 Indexed:  | ./tmp/moby-dick/OPS/chapter_008.xhtml | chapter_008.xhtml | 14
+DEBUG:2015-03-30 16:48:59,998 Indexed:  | ./tmp/moby-dick/OPS/chapter_009.xhtml | chapter_009.xhtml | 15
+DEBUG:2015-03-30 16:49:00,030 Indexed:  | ./tmp/moby-dick/OPS/chapter_010.xhtml | chapter_010.xhtml | 16
+DEBUG:2015-03-30 16:49:00,067 Indexed:  | ./tmp/moby-dick/OPS/chapter_011.xhtml | chapter_011.xhtml | 17
+DEBUG:2015-03-30 16:49:00,104 Indexed:  | ./tmp/moby-dick/OPS/chapter_012.xhtml | chapter_012.xhtml | 18
+DEBUG:2015-03-30 16:49:00,166 Indexed:  | ./tmp/moby-dick/OPS/chapter_013.xhtml | chapter_013.xhtml | 19
+DEBUG:2015-03-30 16:49:00,197 Indexed:  | ./tmp/moby-dick/OPS/chapter_014.xhtml | chapter_014.xhtml | 20
+DEBUG:2015-03-30 16:49:00,242 Indexed:  | ./tmp/moby-dick/OPS/chapter_015.xhtml | chapter_015.xhtml | 21
+DEBUG:2015-03-30 16:49:00,352 Indexed:  | ./tmp/moby-dick/OPS/chapter_016.xhtml | chapter_016.xhtml | 22
+DEBUG:2015-03-30 16:49:00,408 Indexed:  | ./tmp/moby-dick/OPS/chapter_017.xhtml | chapter_017.xhtml | 23
+DEBUG:2015-03-30 16:49:00,459 Indexed:  | ./tmp/moby-dick/OPS/chapter_018.xhtml | chapter_018.xhtml | 24
+DEBUG:2015-03-30 16:49:00,505 Indexed:  | ./tmp/moby-dick/OPS/chapter_019.xhtml | chapter_019.xhtml | 25
+DEBUG:2015-03-30 16:49:00,540 Indexed:  | ./tmp/moby-dick/OPS/chapter_020.xhtml | chapter_020.xhtml | 26
+DEBUG:2015-03-30 16:49:00,602 Indexed:  | ./tmp/moby-dick/OPS/chapter_021.xhtml | chapter_021.xhtml | 27
+DEBUG:2015-03-30 16:49:00,649 Indexed:  | ./tmp/moby-dick/OPS/chapter_022.xhtml | chapter_022.xhtml | 28
+DEBUG:2015-03-30 16:49:00,665 Indexed:  | ./tmp/moby-dick/OPS/chapter_023.xhtml | chapter_023.xhtml | 29
+DEBUG:2015-03-30 16:49:00,720 Indexed:  | ./tmp/moby-dick/OPS/chapter_024.xhtml | chapter_024.xhtml | 30
+DEBUG:2015-03-30 16:49:00,734 Indexed:  | ./tmp/moby-dick/OPS/chapter_025.xhtml | chapter_025.xhtml | 31
+DEBUG:2015-03-30 16:49:00,774 Indexed:  | ./tmp/moby-dick/OPS/chapter_026.xhtml | chapter_026.xhtml | 32
+DEBUG:2015-03-30 16:49:00,823 Indexed:  | ./tmp/moby-dick/OPS/chapter_027.xhtml | chapter_027.xhtml | 33
+DEBUG:2015-03-30 16:49:00,865 Indexed:  | ./tmp/moby-dick/OPS/chapter_028.xhtml | chapter_028.xhtml | 34
+DEBUG:2015-03-30 16:49:00,907 Indexed:  | ./tmp/moby-dick/OPS/chapter_029.xhtml | chapter_029.xhtml | 35
+DEBUG:2015-03-30 16:49:00,921 Indexed:  | ./tmp/moby-dick/OPS/chapter_030.xhtml | chapter_030.xhtml | 36
+DEBUG:2015-03-30 16:49:00,949 Indexed:  | ./tmp/moby-dick/OPS/chapter_031.xhtml | chapter_031.xhtml | 37
+DEBUG:2015-03-30 16:49:01,077 Indexed:  | ./tmp/moby-dick/OPS/chapter_032.xhtml | chapter_032.xhtml | 38
+DEBUG:2015-03-30 16:49:01,108 Indexed:  | ./tmp/moby-dick/OPS/chapter_033.xhtml | chapter_033.xhtml | 39
+DEBUG:2015-03-30 16:49:01,169 Indexed:  | ./tmp/moby-dick/OPS/chapter_034.xhtml | chapter_034.xhtml | 40
+DEBUG:2015-03-30 16:49:01,249 Indexed:  | ./tmp/moby-dick/OPS/chapter_035.xhtml | chapter_035.xhtml | 41
+DEBUG:2015-03-30 16:49:01,350 Indexed:  | ./tmp/moby-dick/OPS/chapter_036.xhtml | chapter_036.xhtml | 42
+DEBUG:2015-03-30 16:49:01,375 Indexed:  | ./tmp/moby-dick/OPS/chapter_037.xhtml | chapter_037.xhtml | 43
+DEBUG:2015-03-30 16:49:01,391 Indexed:  | ./tmp/moby-dick/OPS/chapter_038.xhtml | chapter_038.xhtml | 44
+DEBUG:2015-03-30 16:49:01,404 Indexed:  | ./tmp/moby-dick/OPS/chapter_039.xhtml | chapter_039.xhtml | 45
+DEBUG:2015-03-30 16:49:01,456 Indexed:  | ./tmp/moby-dick/OPS/chapter_040.xhtml | chapter_040.xhtml | 46
+DEBUG:2015-03-30 16:49:01,547 Indexed:  | ./tmp/moby-dick/OPS/chapter_041.xhtml | chapter_041.xhtml | 47
+DEBUG:2015-03-30 16:49:01,640 Indexed:  | ./tmp/moby-dick/OPS/chapter_042.xhtml | chapter_042.xhtml | 48
+DEBUG:2015-03-30 16:49:01,656 Indexed:  | ./tmp/moby-dick/OPS/chapter_043.xhtml | chapter_043.xhtml | 49
+DEBUG:2015-03-30 16:49:01,707 Indexed:  | ./tmp/moby-dick/OPS/chapter_044.xhtml | chapter_044.xhtml | 50
+DEBUG:2015-03-30 16:49:01,786 Indexed:  | ./tmp/moby-dick/OPS/chapter_045.xhtml | chapter_045.xhtml | 51
+DEBUG:2015-03-30 16:49:01,806 Indexed:  | ./tmp/moby-dick/OPS/chapter_046.xhtml | chapter_046.xhtml | 52
+DEBUG:2015-03-30 16:49:01,826 Indexed:  | ./tmp/moby-dick/OPS/chapter_047.xhtml | chapter_047.xhtml | 53
+DEBUG:2015-03-30 16:49:01,891 Indexed:  | ./tmp/moby-dick/OPS/chapter_048.xhtml | chapter_048.xhtml | 54
+DEBUG:2015-03-30 16:49:01,908 Indexed:  | ./tmp/moby-dick/OPS/chapter_049.xhtml | chapter_049.xhtml | 55
+DEBUG:2015-03-30 16:49:01,929 Indexed:  | ./tmp/moby-dick/OPS/chapter_050.xhtml | chapter_050.xhtml | 56
+DEBUG:2015-03-30 16:49:01,958 Indexed:  | ./tmp/moby-dick/OPS/chapter_051.xhtml | chapter_051.xhtml | 57
+DEBUG:2015-03-30 16:49:01,977 Indexed:  | ./tmp/moby-dick/OPS/chapter_052.xhtml | chapter_052.xhtml | 58
+DEBUG:2015-03-30 16:49:02,016 Indexed:  | ./tmp/moby-dick/OPS/chapter_053.xhtml | chapter_053.xhtml | 59
+DEBUG:2015-03-30 16:49:02,148 Indexed:  | ./tmp/moby-dick/OPS/chapter_054.xhtml | chapter_054.xhtml | 60
+DEBUG:2015-03-30 16:49:02,183 Indexed:  | ./tmp/moby-dick/OPS/chapter_055.xhtml | chapter_055.xhtml | 61
+DEBUG:2015-03-30 16:49:02,208 Indexed:  | ./tmp/moby-dick/OPS/chapter_056.xhtml | chapter_056.xhtml | 62
+DEBUG:2015-03-30 16:49:02,235 Indexed:  | ./tmp/moby-dick/OPS/chapter_057.xhtml | chapter_057.xhtml | 63
+DEBUG:2015-03-30 16:49:02,265 Indexed:  | ./tmp/moby-dick/OPS/chapter_058.xhtml | chapter_058.xhtml | 64
+DEBUG:2015-03-30 16:49:02,295 Indexed:  | ./tmp/moby-dick/OPS/chapter_059.xhtml | chapter_059.xhtml | 65
+DEBUG:2015-03-30 16:49:02,334 Indexed:  | ./tmp/moby-dick/OPS/chapter_060.xhtml | chapter_060.xhtml | 66
+DEBUG:2015-03-30 16:49:02,388 Indexed:  | ./tmp/moby-dick/OPS/chapter_061.xhtml | chapter_061.xhtml | 67
+DEBUG:2015-03-30 16:49:02,407 Indexed:  | ./tmp/moby-dick/OPS/chapter_062.xhtml | chapter_062.xhtml | 68
+DEBUG:2015-03-30 16:49:02,423 Indexed:  | ./tmp/moby-dick/OPS/chapter_063.xhtml | chapter_063.xhtml | 69
+DEBUG:2015-03-30 16:49:02,504 Indexed:  | ./tmp/moby-dick/OPS/chapter_064.xhtml | chapter_064.xhtml | 70
+DEBUG:2015-03-30 16:49:02,535 Indexed:  | ./tmp/moby-dick/OPS/chapter_065.xhtml | chapter_065.xhtml | 71
+DEBUG:2015-03-30 16:49:02,565 Indexed:  | ./tmp/moby-dick/OPS/chapter_066.xhtml | chapter_066.xhtml | 72
+DEBUG:2015-03-30 16:49:02,589 Indexed:  | ./tmp/moby-dick/OPS/chapter_067.xhtml | chapter_067.xhtml | 73
+DEBUG:2015-03-30 16:49:02,622 Indexed:  | ./tmp/moby-dick/OPS/chapter_068.xhtml | chapter_068.xhtml | 74
+DEBUG:2015-03-30 16:49:02,640 Indexed:  | ./tmp/moby-dick/OPS/chapter_069.xhtml | chapter_069.xhtml | 75
+DEBUG:2015-03-30 16:49:02,669 Indexed:  | ./tmp/moby-dick/OPS/chapter_070.xhtml | chapter_070.xhtml | 76
+DEBUG:2015-03-30 16:49:02,729 Indexed:  | ./tmp/moby-dick/OPS/chapter_071.xhtml | chapter_071.xhtml | 77
+DEBUG:2015-03-30 16:49:02,773 Indexed:  | ./tmp/moby-dick/OPS/chapter_072.xhtml | chapter_072.xhtml | 78
+DEBUG:2015-03-30 16:49:02,810 Indexed:  | ./tmp/moby-dick/OPS/chapter_073.xhtml | chapter_073.xhtml | 79
+DEBUG:2015-03-30 16:49:02,838 Indexed:  | ./tmp/moby-dick/OPS/chapter_074.xhtml | chapter_074.xhtml | 80
+DEBUG:2015-03-30 16:49:02,861 Indexed:  | ./tmp/moby-dick/OPS/chapter_075.xhtml | chapter_075.xhtml | 81
+DEBUG:2015-03-30 16:49:02,879 Indexed:  | ./tmp/moby-dick/OPS/chapter_076.xhtml | chapter_076.xhtml | 82
+DEBUG:2015-03-30 16:49:02,893 Indexed:  | ./tmp/moby-dick/OPS/chapter_077.xhtml | chapter_077.xhtml | 83
+DEBUG:2015-03-30 16:49:02,923 Indexed:  | ./tmp/moby-dick/OPS/chapter_078.xhtml | chapter_078.xhtml | 84
+DEBUG:2015-03-30 16:49:02,941 Indexed:  | ./tmp/moby-dick/OPS/chapter_079.xhtml | chapter_079.xhtml | 85
+DEBUG:2015-03-30 16:49:02,959 Indexed:  | ./tmp/moby-dick/OPS/chapter_080.xhtml | chapter_080.xhtml | 86
+DEBUG:2015-03-30 16:49:03,027 Indexed:  | ./tmp/moby-dick/OPS/chapter_081.xhtml | chapter_081.xhtml | 87
+DEBUG:2015-03-30 16:49:03,055 Indexed:  | ./tmp/moby-dick/OPS/chapter_082.xhtml | chapter_082.xhtml | 88
+DEBUG:2015-03-30 16:49:03,072 Indexed:  | ./tmp/moby-dick/OPS/chapter_083.xhtml | chapter_083.xhtml | 89
+DEBUG:2015-03-30 16:49:03,089 Indexed:  | ./tmp/moby-dick/OPS/chapter_084.xhtml | chapter_084.xhtml | 90
+DEBUG:2015-03-30 16:49:03,124 Indexed:  | ./tmp/moby-dick/OPS/chapter_085.xhtml | chapter_085.xhtml | 91
+DEBUG:2015-03-30 16:49:03,163 Indexed:  | ./tmp/moby-dick/OPS/chapter_086.xhtml | chapter_086.xhtml | 92
+DEBUG:2015-03-30 16:49:03,254 Indexed:  | ./tmp/moby-dick/OPS/chapter_087.xhtml | chapter_087.xhtml | 93
+DEBUG:2015-03-30 16:49:03,278 Indexed:  | ./tmp/moby-dick/OPS/chapter_088.xhtml | chapter_088.xhtml | 94
+DEBUG:2015-03-30 16:49:03,305 Indexed:  | ./tmp/moby-dick/OPS/chapter_089.xhtml | chapter_089.xhtml | 95
+DEBUG:2015-03-30 16:49:03,330 Indexed:  | ./tmp/moby-dick/OPS/chapter_090.xhtml | chapter_090.xhtml | 96
+DEBUG:2015-03-30 16:49:03,376 Indexed:  | ./tmp/moby-dick/OPS/chapter_091.xhtml | chapter_091.xhtml | 97
+DEBUG:2015-03-30 16:49:03,396 Indexed:  | ./tmp/moby-dick/OPS/chapter_092.xhtml | chapter_092.xhtml | 98
+DEBUG:2015-03-30 16:49:03,427 Indexed:  | ./tmp/moby-dick/OPS/chapter_093.xhtml | chapter_093.xhtml | 99
+DEBUG:2015-03-30 16:49:03,451 Indexed:  | ./tmp/moby-dick/OPS/chapter_094.xhtml | chapter_094.xhtml | 100
+DEBUG:2015-03-30 16:49:03,463 Indexed:  | ./tmp/moby-dick/OPS/chapter_095.xhtml | chapter_095.xhtml | 101
+DEBUG:2015-03-30 16:49:03,497 Indexed:  | ./tmp/moby-dick/OPS/chapter_096.xhtml | chapter_096.xhtml | 102
+DEBUG:2015-03-30 16:49:03,505 Indexed:  | ./tmp/moby-dick/OPS/chapter_097.xhtml | chapter_097.xhtml | 103
+DEBUG:2015-03-30 16:49:03,534 Indexed:  | ./tmp/moby-dick/OPS/chapter_098.xhtml | chapter_098.xhtml | 104
+DEBUG:2015-03-30 16:49:03,611 Indexed:  | ./tmp/moby-dick/OPS/chapter_099.xhtml | chapter_099.xhtml | 105
+DEBUG:2015-03-30 16:49:03,682 Indexed:  | ./tmp/moby-dick/OPS/chapter_100.xhtml | chapter_100.xhtml | 106
+DEBUG:2015-03-30 16:49:03,728 Indexed:  | ./tmp/moby-dick/OPS/chapter_101.xhtml | chapter_101.xhtml | 107
+DEBUG:2015-03-30 16:49:03,777 Indexed:  | ./tmp/moby-dick/OPS/chapter_102.xhtml | chapter_102.xhtml | 108
+DEBUG:2015-03-30 16:49:03,796 Indexed:  | ./tmp/moby-dick/OPS/chapter_103.xhtml | chapter_103.xhtml | 109
+DEBUG:2015-03-30 16:49:03,823 Indexed:  | ./tmp/moby-dick/OPS/chapter_104.xhtml | chapter_104.xhtml | 110
+DEBUG:2015-03-30 16:49:03,868 Indexed:  | ./tmp/moby-dick/OPS/chapter_105.xhtml | chapter_105.xhtml | 111
+DEBUG:2015-03-30 16:49:03,887 Indexed:  | ./tmp/moby-dick/OPS/chapter_106.xhtml | chapter_106.xhtml | 112
+DEBUG:2015-03-30 16:49:03,909 Indexed:  | ./tmp/moby-dick/OPS/chapter_107.xhtml | chapter_107.xhtml | 113
+DEBUG:2015-03-30 16:49:03,955 Indexed:  | ./tmp/moby-dick/OPS/chapter_108.xhtml | chapter_108.xhtml | 114
+DEBUG:2015-03-30 16:49:03,984 Indexed:  | ./tmp/moby-dick/OPS/chapter_109.xhtml | chapter_109.xhtml | 115
+DEBUG:2015-03-30 16:49:04,039 Indexed:  | ./tmp/moby-dick/OPS/chapter_110.xhtml | chapter_110.xhtml | 116
+DEBUG:2015-03-30 16:49:04,059 Indexed:  | ./tmp/moby-dick/OPS/chapter_111.xhtml | chapter_111.xhtml | 117
+DEBUG:2015-03-30 16:49:04,080 Indexed:  | ./tmp/moby-dick/OPS/chapter_112.xhtml | chapter_112.xhtml | 118
+DEBUG:2015-03-30 16:49:04,109 Indexed:  | ./tmp/moby-dick/OPS/chapter_113.xhtml | chapter_113.xhtml | 119
+DEBUG:2015-03-30 16:49:04,133 Indexed:  | ./tmp/moby-dick/OPS/chapter_114.xhtml | chapter_114.xhtml | 120
+DEBUG:2015-03-30 16:49:04,162 Indexed:  | ./tmp/moby-dick/OPS/chapter_115.xhtml | chapter_115.xhtml | 121
+DEBUG:2015-03-30 16:49:04,181 Indexed:  | ./tmp/moby-dick/OPS/chapter_116.xhtml | chapter_116.xhtml | 122
+DEBUG:2015-03-30 16:49:04,200 Indexed:  | ./tmp/moby-dick/OPS/chapter_117.xhtml | chapter_117.xhtml | 123
+DEBUG:2015-03-30 16:49:04,225 Indexed:  | ./tmp/moby-dick/OPS/chapter_118.xhtml | chapter_118.xhtml | 124
+DEBUG:2015-03-30 16:49:04,288 Indexed:  | ./tmp/moby-dick/OPS/chapter_119.xhtml | chapter_119.xhtml | 125
+DEBUG:2015-03-30 16:49:04,299 Indexed:  | ./tmp/moby-dick/OPS/chapter_120.xhtml | chapter_120.xhtml | 126
+DEBUG:2015-03-30 16:49:04,322 Indexed:  | ./tmp/moby-dick/OPS/chapter_121.xhtml | chapter_121.xhtml | 127
+DEBUG:2015-03-30 16:49:04,331 Indexed:  | ./tmp/moby-dick/OPS/chapter_122.xhtml | chapter_122.xhtml | 128
+DEBUG:2015-03-30 16:49:04,368 Indexed:  | ./tmp/moby-dick/OPS/chapter_123.xhtml | chapter_123.xhtml | 129
+DEBUG:2015-03-30 16:49:04,392 Indexed:  | ./tmp/moby-dick/OPS/chapter_124.xhtml | chapter_124.xhtml | 130
+DEBUG:2015-03-30 16:49:04,417 Indexed:  | ./tmp/moby-dick/OPS/chapter_125.xhtml | chapter_125.xhtml | 131
+DEBUG:2015-03-30 16:49:04,456 Indexed:  | ./tmp/moby-dick/OPS/chapter_126.xhtml | chapter_126.xhtml | 132
+DEBUG:2015-03-30 16:49:04,482 Indexed:  | ./tmp/moby-dick/OPS/chapter_127.xhtml | chapter_127.xhtml | 133
+DEBUG:2015-03-30 16:49:04,521 Indexed:  | ./tmp/moby-dick/OPS/chapter_128.xhtml | chapter_128.xhtml | 134
+DEBUG:2015-03-30 16:49:04,542 Indexed:  | ./tmp/moby-dick/OPS/chapter_129.xhtml | chapter_129.xhtml | 135
+DEBUG:2015-03-30 16:49:04,596 Indexed:  | ./tmp/moby-dick/OPS/chapter_130.xhtml | chapter_130.xhtml | 136
+DEBUG:2015-03-30 16:49:04,615 Indexed:  | ./tmp/moby-dick/OPS/chapter_131.xhtml | chapter_131.xhtml | 137
+DEBUG:2015-03-30 16:49:04,658 Indexed:  | ./tmp/moby-dick/OPS/chapter_132.xhtml | chapter_132.xhtml | 138
+DEBUG:2015-03-30 16:49:04,767 Indexed:  | ./tmp/moby-dick/OPS/chapter_133.xhtml | chapter_133.xhtml | 139
+DEBUG:2015-03-30 16:49:04,855 Indexed:  | ./tmp/moby-dick/OPS/chapter_134.xhtml | chapter_134.xhtml | 140
+DEBUG:2015-03-30 16:49:04,958 Indexed:  | ./tmp/moby-dick/OPS/chapter_135.xhtml | chapter_135.xhtml | 141
+DEBUG:2015-03-30 16:49:04,968 Indexed:  | ./tmp/moby-dick/OPS/chapter_136.xhtml | chapter_136.xhtml | 142
+DEBUG:2015-03-30 16:49:04,975 Indexed:  | ./tmp/moby-dick/OPS/copyright.xhtml | copyright.xhtml | 143
+DEBUG:2015-03-30 16:49:05,058 Indexed:  | ./tmp/moby-dick/OPS/toc.xhtml | toc.xhtml | 144
+INFO:2015-03-30 16:49:12,317 Generate words for search
+INFO:2015-03-30 16:49:12,350 <class 'epubsearch.morpho_engines.pymorphy2engine.Pymorphy2Engine'>
+INFO:2015-03-30 16:49:12,352 Loading dictionaries from /usr/lib/python3.4/site-packages/pymorphy2_dicts/data
+INFO:2015-03-30 16:49:12,534 format: 2.4, revision: 393442, updated: 2015-01-17T16:03:56.586168
+INFO:2015-03-30 16:49:12,537 Search word Moby and lexemes
+DEBUG:2015-03-30 16:49:12,537 Q moby
+DEBUG:2015-03-30 16:49:12,561 Hits <Top 29 Results for Term('content', 'moby') runtime=0.0016614390005997848>

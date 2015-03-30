@@ -1,6 +1,7 @@
 import importlib
 from lxml import etree
-import re
+import re, os
+
 import logging
 
 
@@ -9,6 +10,8 @@ class EpubIndexer(object):
     engine = False
 
     def __init__(self, engineName=False, databaseName='indexdir'):
+        self.databaseName = databaseName
+        self.databasePath = "databases/" + databaseName
         if engineName:
             mod = importlib.import_module("epubsearch.search_engines.%sengine" % engineName)
             # import whooshengine as engine
@@ -17,19 +20,21 @@ class EpubIndexer(object):
 
     def load(self, epub):
         self.epub = epub
-        # try:
-        #     self.engine.open()
-        # except Exception as e:
-        #     print(e)
-        self.engine.create()
+        if os.path.exists(self.databasePath ):
+            try:
+                self.engine.open()
+            except Exception as e:
+                print(e)
+        else:
+            self.engine.create()
 
-        for spineItem in epub.spine:
+            for spineItem in epub.spine:
 
-            path = epub.base + "/" + spineItem['href']
+                path = epub.base + "/" + spineItem['href']
 
-            self.engine.add(path=path, href=spineItem['href'], title=spineItem['title'], cfiBase=spineItem['cfiBase'], spinePos=spineItem['spinePos'])
+                self.engine.add(path=path, href=spineItem['href'], title=spineItem['title'], cfiBase=spineItem['cfiBase'], spinePos=spineItem['spinePos'])
 
-        self.engine.finished()
+            self.engine.finished()
 
     def search(self, q, limit=None):
         rawresults = self.engine.query(q, limit)

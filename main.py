@@ -3,11 +3,11 @@ logging.basicConfig(filename='logs', format='%(levelname)s:%(asctime)s %(message
 
 from optparse import OptionParser
 
-from .epubsearch import EpubParser
-from .epubsearch import EpubIndexer
-from .epubsearch import WordMorphoGenerator
+from epubsearch import EpubParser
+from epubsearch import EpubIndexer
+from epubsearch import WordMorphoGenerator
 
-import zipfile,os.path
+import zipfile, os.path
 import shutil
 
 
@@ -38,7 +38,7 @@ class EpubWorker(object):
             book_address = self.dest_dir
 
         epub = EpubParser(book_address)
-        self.index = EpubIndexer('whoosh')
+        self.index = EpubIndexer(engineName='whoosh', databaseName=book_name)
         logging.info('Indexing')
         self.index.load(epub)
 
@@ -58,7 +58,10 @@ class EpubWorker(object):
             result = result.get('results')
             if result:
                 for item in result:
-                    results_formatted.append(item['baseCfi'])
+                    results_formatted.append({'baseCfi': item['baseCfi'],
+                                              'cfi': item['cfi'],
+                                              'href': item['href'],
+                                              'path': item['path']})
 
         return {'word': search_word,
                 'lexemes': search_words,
@@ -102,7 +105,8 @@ def main():
     search = userParams['search']
     book_address = userParams['book_address']
     language = userParams['language']
-    lexemes = userParams['lexemes']
+    # lexemes = userParams['lexemes']
+    lexemes = 'y'
 
     with EpubWorker(book_address, language) as worker:
         if lexemes:
