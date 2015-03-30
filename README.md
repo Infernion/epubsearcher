@@ -21,13 +21,16 @@
 ===========
 ![Архитектура](/Infernion/epubseacher/raw/master/docs/epubseacher_architecture.png)
 
-Как использовать
+Как утсановить
 ==============
-Должен быть установлен python3.4
+Должен быть установлен python3.4, над другими версия не тестировал, но должно работать
 
 1. Склонировать репозитарий
-2. Установить зависимости
-   ``pip install -r requirements.txt``
+2. Установить зависимости ``pip install -r requirements.txt``
+
+Или
+
+    pip install git+https://bitbucket.org/Infernion/epubseacher/
 
 ![Способы использования](/Infernion/epubseacher/raw/master/docs/inputData.png)
 
