@@ -4,9 +4,9 @@ logging.basicConfig(filename='logs', format='%(levelname)s:%(asctime)s %(message
 from optparse import OptionParser
 
 try:
-    from epubsearcher.epubsearch import EpubParser
-    from epubsearcher.epubsearch import EpubIndexer
-    from epubsearcher.epubsearch import WordMorphoGenerator
+    from .epubsearch import EpubParser
+    from .epubsearch import EpubIndexer
+    from .epubsearch import WordMorphoGenerator
 except:
     from epubsearch import EpubParser
     from epubsearch import EpubIndexer
