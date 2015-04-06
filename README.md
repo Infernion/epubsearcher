@@ -50,7 +50,7 @@
 Импортируем библиотеку и загружаем книгу 
 ``` python
 from epubseacher import EpubWorker
-worker = EpubWorker(book_address, language):
+worker = EpubWorker(book_address, language)
 ```
 В экземляре появится проиндексированая книга, по которой можно производить поиск.
 Поиск одного слова
