@@ -9,19 +9,19 @@ class EpubIndexer(object):
     epub = False
     engine = False
 
-    def __init__(self, engineName=False, databaseName='indexdir', force_index=False):
+    def __init__(self, engine_name=False, database_name='indexdir', force_index=False):
         self.force_index = force_index
-        self.databaseName = databaseName
-        self.databasePath = "databases/" + databaseName
-        if engineName:
-            mod = importlib.import_module("epubsearch.search_engines.%sengine" % engineName)
+        self.database_name = database_name
+        self.database_path = "databases/" + database_name
+        if engine_name:
+            mod = importlib.import_module("epubsearch.search_engines.%sengine" % engine_name)
             # import whooshengine as engine
-            self.engine = getattr(mod,'%sEngine' % engineName.capitalize())(databaseName)
+            self.engine = getattr(mod,'%sEngine' % engine_name.capitalize())(database_name)
             logging.info(self.engine)
 
     def load(self, epub):
         self.epub = epub
-        if os.path.exists(self.databasePath) and not self.force_index:
+        if os.path.exists(self.database_path) and not self.force_index:
             try:
                 self.engine.open()
             except Exception as e:
@@ -51,7 +51,7 @@ class EpubIndexer(object):
             baseitem['path'] = hit["path"].decode(encoding="UTF-8")
 
             # find base of cfi
-            cfiBase = hit['cfiBase'].decode(encoding="UTF-8") + "!"
+            cfi_base= hit['cfiBase'].decode(encoding="UTF-8") + "!"
 
             with open(hit["path"]) as fileobj:
                 tree = etree.parse(fileobj)
@@ -68,17 +68,17 @@ class EpubIndexer(object):
 
                     # print word
                     # print word.getparent()
-                    item['baseCfi'] = cfiBase
-                    item['cfi'] = getCFI(cfiBase, word)
+                    item['baseCfi'] = cfi_base
+                    item['cfi'] = get_cfi(cfi_base, word)
                     #print cfi
                     r["results"].append(item)
 
         ## Sort results by chapter
-        r['results'] = sorted(r['results'], key=lambda x: getCFIChapter(x['baseCfi']))
+        r['results'] = sorted(r['results'], key=lambda x: get_cfi_chapter(x['baseCfi']))
         return r
 
 
-def getCFI(cfiBase, word):
+def get_cfi(cfiBase, word):
 
     cfi_list = []
     parent = word.getparent()
@@ -95,7 +95,7 @@ def getCFI(cfiBase, word):
     cfi = cfiBase + '/' + '/'.join(cfi_list)
     return cfi
 
-def getCFIChapter(cfiBase):
-    cfiBase = re.sub(r'\[.*\]','',cfiBase)
-    chapter_location = cfiBase[cfiBase.rfind('/')+1:cfiBase.find('!')]
+def get_cfi_chapter(cfi_base):
+    cfi_base = re.sub(r'\[.*\]','',cfi_base)
+    chapter_location = cfi_base[cfi_base.rfind('/')+1:cfi_base.find('!')]
     return int(chapter_location)

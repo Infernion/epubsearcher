@@ -6,13 +6,13 @@ class WordMorphoGenerator(object):
     engine = False
 
     def __init__(self, word, lang='ru'):
-        if lang=='ru': engineName='pymorphy2'
-        if engineName:
+        if lang=='ru': engine_name='pymorphy2'
+        if engine_name:
             self.word = word
 
-            mod = importlib.import_module("epubsearch.morpho_engines.%sengine" % engineName)
+            mod = importlib.import_module("epubsearch.morpho_engines.%sengine" % engine_name)
             # import whooshengine as engine
-            self.engine = getattr(mod,'%sEngine' % engineName.capitalize())
+            self.engine = getattr(mod,'%sEngine' % engine_name.capitalize())
             logging.info(self.engine)
 
     def generate(self):

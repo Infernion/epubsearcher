@@ -15,18 +15,18 @@ class WhooshEngine(BaseEngine):
 
     def open(self):
         try:
-            self.ix = index.open_dir(self.databasePath)
+            self.ix = index.open_dir(self.database_path)
         except Exception as e:
-            logging.error("openning database {} failed".format(self.databaseName))
+            logging.error("openning database {} failed".format(self.database_name))
 
     def create(self):
 
-        if not os.path.exists(self.databasePath):
-            os.mkdir(self.databasePath)
+        if not os.path.exists(self.database_path):
+            os.mkdir(self.database_path)
 
         try:
-            logging.debug("openning database {} to create".format(self.databaseName))
-            self.ix = index.create_in(self.databasePath, self.schema)
+            logging.debug("openning database {} to create".format(self.database_name))
+            self.ix = index.create_in(self.database_path, self.schema)
         except Exception as e:
             logging.error(e)
 
@@ -44,8 +44,8 @@ class WhooshEngine(BaseEngine):
         logging.debug('Q {}'.format(q))
         with self.ix.searcher() as searcher:
             results = []
-            parsedQuery = QueryParser("content", schema=self.ix.schema).parse(q)
-            hits = searcher.search(parsedQuery, limit=limit)
+            parsed_query = QueryParser("content", schema=self.ix.schema).parse(q)
+            hits = searcher.search(parsed_query, limit=limit)
             logging.debug("Hits {}".format(hits))
             for hit in hits:
                 item = {}

@@ -1,4 +1,5 @@
 class BaseEngine(object):
+
     def __init__(self, word):
         self.word = word
 

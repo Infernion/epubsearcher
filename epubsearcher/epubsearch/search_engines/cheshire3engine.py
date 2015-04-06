@@ -62,44 +62,44 @@ class Cheshire3Engine(BaseEngine):
         open passed db
         """
         try:
-            self.db = self.server.get_object(self.session, self.databaseName)
-            self.session.database = self.databaseName
+            self.db = self.server.get_object(self.session, self.database_name)
+            self.session.database = self.database_name
         except Exception as e:
             logging.error(e)
-            logging.error( "openning database {} failed".format(self.databaseName))
+            logging.error( "openning database {} failed".format(self.database_name))
 
     def create(self):
-        if not os.path.exists(self.databasePath):
-            os.makedirs(self.databasePath)
+        if not os.path.exists(self.database_path):
+            os.makedirs(self.database_path)
 
         # create cheshire metadata directory if needed, then initialize with empty list
-        metadata_path = self.databasePath + self.cheshire_metadata_dir  
+        metadata_path = self.database_path + self.cheshire_metadata_dir
         if not os.path.exists(metadata_path):
             os.makedirs(metadata_path)
-        with open(metadata_path + '/' + self.databaseName, 'w') as f:
+        with open(metadata_path + '/' + self.database_name, 'w') as f:
             json.dump({}, f)
 
         try:
-            logging.info("openning database {} to create".format(self.databasePath))
-            os.system("cheshire3-init " + self.databasePath + " --database=" + self.databaseName)
+            logging.info("openning database {} to create".format(self.database_path))
+            os.system("cheshire3-init " + self.database_path + " --database=" + self.database_name)
         except Exception as e:
             logging.error(e)
 
     def add(self, path='', href='', title='', cfiBase='', spinePos=''):
         # first, index the document in cheshire3 using unix commands
-        os.system("cheshire3-load --database=" + self.databaseName + ' ' + path)
+        os.system("cheshire3-load --database=" + self.database_name + ' ' + path)
         
         doc_md = dict()
         doc_md[href] = {'path' : path, 'href' : href, 'title' : title, 'cfiBase' : cfiBase, 'spinePos' : spinePos}
         # title is not populated, so pulling filename from path prefix
         #filename = path[:path.find('/')] + '.json'
-        metadata_path = self.databasePath + self.cheshire_metadata_dir
-        with open(metadata_path + '/' + self.databaseName) as f_in:
+        metadata_path = self.database_path + self.cheshire_metadata_dir
+        with open(metadata_path + '/' + self.database_name) as f_in:
             md_dict = json.load(f_in)
             
         md_dict.update(doc_md)
 
-        with open(metadata_path + '/' + self.databaseName, 'w') as f_out:
+        with open(metadata_path + '/' + self.database_name, 'w') as f_out:
             json.dump(md_dict, f_out)
         #print "Current Path for directory writing: " + os.getcwd()
 
@@ -129,8 +129,8 @@ class Cheshire3Engine(BaseEngine):
         rs = self.db.search(self.session, c3Query)
 
         # open up the json file with reader specific attributes
-        metadata_path = self.databasePath + self.cheshire_metadata_dir  
-        with open(metadata_path + '/' + self.databaseName) as f:
+        metadata_path = self.database_path + self.cheshire_metadata_dir
+        with open(metadata_path + '/' + self.database_name) as f:
             db_md_dict = json.load(f)
 
         # loop through recordset, create new results list with dictionary of found values
