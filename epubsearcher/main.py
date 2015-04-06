@@ -3,11 +3,16 @@ logging.basicConfig(filename='logs', format='%(levelname)s:%(asctime)s %(message
 
 from optparse import OptionParser
 
-from .epubsearch import EpubParser
-from .epubsearch import EpubIndexer
-from .epubsearch import WordMorphoGenerator
+try:
+    from .epubsearch import EpubParser
+    from .epubsearch import EpubIndexer
+    from .epubsearch import WordMorphoGenerator
+except:
+    from epubsearch import EpubParser
+    from epubsearch import EpubIndexer
+    from epubsearch import WordMorphoGenerator
 
-import zipfile, os.path
+import zipfile
 import shutil
 
 
@@ -15,12 +20,6 @@ def unzip(source_filename, dest_dir):
     with zipfile.ZipFile(source_filename) as zf:
         path = dest_dir
         zf.extractall(path)
-
-def zipdir(source_dir, dest_zip):
-    with zipfile.ZipFile(dest_zip, 'w') as zf:
-        for root, dirs, files in os.walk(source_dir):
-            for file in files:
-                zf.write(os.path.join(root, file))
 
 
 class EpubWorker(object):
@@ -45,7 +44,7 @@ class EpubWorker(object):
             book_address = self.dest_dir
 
         epub = EpubParser(book_address)
-        self.index = EpubIndexer(engineName='whoosh', databaseName=book_name, force_index=force_index)
+        self.index = EpubIndexer(engine_name='whoosh', database_name=book_name, force_index=force_index)
         logging.info('Indexing')
         self.index.load(epub)
 
