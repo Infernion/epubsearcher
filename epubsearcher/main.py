@@ -4,13 +4,13 @@ logging.basicConfig(filename='logs', format='%(levelname)s:%(asctime)s %(message
 from optparse import OptionParser
 
 try:
-    from epubsearcher.epubsearch import EpubParser
-    from epubsearcher.epubsearch import EpubIndexer
-    from epubsearcher.epubsearch import WordMorphoGenerator
-except:
     from .epubsearch import EpubParser
     from .epubsearch import EpubIndexer
     from .epubsearch import WordMorphoGenerator
+except:
+    from epubsearch import EpubParser
+    from epubsearch import EpubIndexer
+    from epubsearch import WordMorphoGenerator
 
 import zipfile
 import shutil
@@ -39,7 +39,7 @@ class EpubWorker(object):
             self.is_epub = True
             logging.info('Uncompress {}'.format(book_address))
             book_name = book_address[book_address.rfind('/')+1:-5]
-            self.dest_dir = './tmp/'+book_name
+            self.dest_dir = '/tmp/epub_worker/temp/'+book_name
             unzip(book_address, self.dest_dir)
             book_address = self.dest_dir
         else:

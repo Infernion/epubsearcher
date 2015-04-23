@@ -1,10 +1,18 @@
+import os
+
+
 class BaseEngine(object):
     
     database = ''
 
     def __init__(self, database_name="indexdir"):
         self.database_name = database_name
-        self.database_path = "databases/" + database_name
+        database_folder_path = "/tmp/epub_worker/databases/"
+
+        if not os.path.exists(database_folder_path):
+            os.mkdir(database_folder_path)
+
+        self.database_path = database_folder_path + database_name
         self.open()
         pass
 

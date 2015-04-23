@@ -12,9 +12,14 @@ class EpubIndexer(object):
     def __init__(self, engine_name=False, database_name='indexdir', force_index=False):
         self.force_index = force_index
         self.database_name = database_name
-        self.database_path = "databases/" + database_name
+
+        database_folder_path = "/tmp/epub_worker/databases/"
+        if not os.path.exists(database_folder_path):
+            os.mkdir(database_folder_path)
+
+        self.database_path = database_folder_path + database_name
         if engine_name:
-            mod = importlib.import_module("epubsearch.search_engines.%sengine" % engine_name)
+            mod = importlib.import_module("epubsearcher.epubsearch.search_engines.%sengine" % engine_name)
             # import whooshengine as engine
             self.engine = getattr(mod,'%sEngine' % engine_name.capitalize())(database_name)
             logging.info(self.engine)

@@ -10,7 +10,7 @@ class WordMorphoGenerator(object):
         if engine_name:
             self.word = word
 
-            mod = importlib.import_module("epubsearch.morpho_engines.%sengine" % engine_name)
+            mod = importlib.import_module("epubsearcher.epubsearch.morpho_engines.%sengine" % engine_name)
             # import whooshengine as engine
             self.engine = getattr(mod,'%sEngine' % engine_name.capitalize())
             logging.info(self.engine)
