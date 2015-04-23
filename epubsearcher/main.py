@@ -42,6 +42,8 @@ class EpubWorker(object):
             self.dest_dir = './tmp/'+book_name
             unzip(book_address, self.dest_dir)
             book_address = self.dest_dir
+        else:
+            book_name = book_address[book_address.rfind('/')+1:]
 
         self.epub = EpubParser(book_address)
         self.index = EpubIndexer(engine_name='whoosh', database_name=book_name, force_index=force_index)
