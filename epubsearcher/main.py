@@ -43,10 +43,10 @@ class EpubWorker(object):
             unzip(book_address, self.dest_dir)
             book_address = self.dest_dir
 
-        epub = EpubParser(book_address)
+        self.epub = EpubParser(book_address)
         self.index = EpubIndexer(engine_name='whoosh', database_name=book_name, force_index=force_index)
         logging.info('Indexing')
-        self.index.load(epub)
+        self.index.load(self.epub)
 
     def search_word(self, search_word):
         logging.info('Search word {}'.format(search_word))
@@ -72,6 +72,11 @@ class EpubWorker(object):
         return {'word': search_word,
                 'lexemes': search_words,
                 'results': results_formatted}
+
+    def get_characters_cfi(self):
+        spine = self.epub.spine
+        characters_cfi = [row['cfiBase'] for row in spine]
+        return characters_cfi
 
     def close(self):
         shutil.rmtree(self.dest_dir)

@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='epubsearcher',
-    version='0.3.1',
+    version='0.3.3',
     packages=['epubsearcher', 'epubsearcher.epubsearch', 'epubsearcher.epubsearch.morpho_engines',
               'epubsearcher.epubsearch.search_engines'],
     url='https://bitbucket.org/Infernion/epubsearcher/overview',

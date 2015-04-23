@@ -23,7 +23,12 @@
 
 Как утсановить
 ==============
-Должен быть установлен python3.4, над другими версия не тестировал, но должно работать
+Должен быть установлен python3.4, над другими версия не тестировал, но с 
+версиями 3.Х должно работать без нареканий. На 2.Х будут проблемы с кодировкой.
+
+Для получения исходников
+    
+    git clone https://bitbucket.org/Infernion/epubsearcher/
 
 Для установки дев версии
 
@@ -37,13 +42,21 @@
 
 Для запуска с терминала
 =======================
-Перейдите в склонированую директорию
+Перейдите в склонированую директорию, полный путь epubsearcher_module/
+
+Установить зависимости с помощью команды 
+    
+    pip install -r requirements.txt
 
 Так можно запустить поиск одного слова
-``python main.py --search=аллат --book-address="./test_data/Sensei4.epub" --lang=ru``
+    
+    python main.py --search=аллат --book-address="./test_data/Sensei4.epub" 
+--lang=ru
 
 А так поиск слова со всеми его лексемами
-``python main.py --search=аллат --book-address="./test_data/Sensei4.epub" --lang=ru --lexemes=yes``
+    
+    python main.py --search=аллат --book-address="./test_data/Sensei4.epub" 
+--lang=ru --lexemes=yes
 
 Использование как библиотеки
 ============================
