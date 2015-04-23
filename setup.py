@@ -1,8 +1,11 @@
-from distutils.core import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
 setup(
     name='epubsearcher',
-    version='0.3.3',
+    version='0.3.4',
     packages=['epubsearcher', 'epubsearcher.epubsearch', 'epubsearcher.epubsearch.morpho_engines',
               'epubsearcher.epubsearch.search_engines'],
     url='https://bitbucket.org/Infernion/epubsearcher/overview',
@@ -10,7 +13,7 @@ setup(
     author='Sergiy Khalymon',
     author_email='sergiykhalimon@gmail.com',
     description='Search selected word in epub book.',
-    dependency_links = [
+    install_requires = [
         "whoosh",
         "pymorphy2",
         "lxml",
