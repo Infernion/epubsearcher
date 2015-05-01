@@ -9,7 +9,7 @@ class EpubParser(object):
     manifest = {}
     titles = {}
     spine = []
-    spine_element_num = str(6) #replace this with xml check for which child of root 'spine' is x 2
+    spine_element_num = str(3) #replace this with xml check for which child of root 'spine' is x 2
 
     def __init__(self, path):
         self.name = path.replace('/', '')
