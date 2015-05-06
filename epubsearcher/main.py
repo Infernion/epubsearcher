@@ -75,7 +75,7 @@ class EpubWorker(object):
                 'lexemes': search_words,
                 'results': results_formatted}
 
-    def get_characters_cfi(self):
+    def get_chapters_cfi(self):
         spine = self.epub.spine
         characters_cfi = [row['cfiBase'] for row in spine]
         return characters_cfi
