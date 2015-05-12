@@ -76,6 +76,16 @@ class EpubIndexer(object):
                     item['baseCfi'] = cfi_base
                     item['cfi'] = get_cfi(cfi_base, word)
                     #print cfi
+                    # Create highlight snippet in try / except
+                    # because I'm not convinced its error free for all
+                    # epub texts
+                    try:
+                        item['highlight'] = create_highlight(word.text, q) # replace me with above
+                    except Exception as e:
+                        print("Exception when creating highlight for query", q)
+                        print(e)
+                        item['highlight'] = ''
+
                     r["results"].append(item)
 
         ## Sort results by chapter
@@ -104,3 +114,29 @@ def get_cfi_chapter(cfi_base):
     cfi_base = re.sub(r'\[.*\]','',cfi_base)
     chapter_location = cfi_base[cfi_base.rfind('/')+1:cfi_base.find('!')]
     return int(chapter_location)
+
+
+def create_highlight(text, query):
+    tag = "<b class='match'>"
+    closetag = "</b>"
+    offset = len(query)
+
+    leading_text = trim_length(text[:text.lower().find(query)],-10) + tag
+    word = text[text.lower().find(query):text.lower().find(query)+offset]
+    ending_text = closetag + trim_length(text[text.lower().find(query)+offset:],10)
+
+    return leading_text + word + end_with_periods(ending_text)
+
+def trim_length(text, words):
+    if words > 0:
+        text_list = text.split(' ')[:words]
+    else:
+        text_list = text.split(' ')[words:]
+
+    return ' '.join(text_list)
+
+def end_with_periods(text):
+    if text[-1] not in '!?.':
+        return text + ' ...'
+    else:
+        return text

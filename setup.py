@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name='epubsearcher',
-    version='0.1.1.2',
+    version='0.1.2',
     packages=['epubsearcher', 'epubsearcher.epubsearch', 'epubsearcher.epubsearch.morpho_engines',
               'epubsearcher.epubsearch.search_engines'],
     url='https://bitbucket.org/Infernion/epubsearcher/overview',
