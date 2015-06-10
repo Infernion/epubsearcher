@@ -1,5 +1,9 @@
+import zipfile
+import shutil
+import os
+
 import logging
-logging.basicConfig(filename='logs', format='%(levelname)s:%(asctime)s %(message)s', level=logging.DEBUG)
+import logging.handlers
 
 from optparse import OptionParser
 
@@ -12,8 +16,9 @@ except:
     from epubsearch import EpubIndexer
     from epubsearch import WordMorphoGenerator
 
-import zipfile
-import shutil
+syslog = logging.handlers.SysLogHandler(address = '/dev/log')
+logging.basicConfig(format="%(levelname)s:%(asctime)s %(message)s datefmt='%Y-%m-%dT%H:%M:%S'",  level=logging.DEBUG,
+                    handlers=[syslog])
 
 
 def unzip(source_filename, dest_dir):
@@ -35,6 +40,10 @@ class EpubWorker(object):
     def __init__(self, book_address, lang='ru', force_index=False):
         force_index=force_index
         self.is_epub = False
+        epub_worker_folder = "/tmp/epub_worker"
+        if not os.path.exists(epub_worker_folder):
+            os.mkdir(epub_worker_folder)
+
         if book_address[-4:] == 'epub':
             self.is_epub = True
             logging.info('Uncompress {}'.format(book_address))
