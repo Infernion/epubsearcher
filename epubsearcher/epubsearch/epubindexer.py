@@ -58,7 +58,7 @@ class EpubIndexer(object):
             # find base of cfi
             cfi_base= hit['cfiBase'].decode(encoding="UTF-8") + "!"
 
-            with open(hit["path"]) as fileobj:
+            with open(hit["path"], encoding='utf-8') as fileobj:
                 tree = etree.parse(fileobj)
                 parsedString = etree.tostring(tree.getroot())
                 # case-insensitive xpath search
@@ -94,7 +94,6 @@ class EpubIndexer(object):
 
 
 def get_cfi(cfiBase, word):
-
     cfi_list = []
     parent = word.getparent()
     child = word
@@ -106,7 +105,6 @@ def get_cfi(cfiBase, word):
             cfi_list.insert(0,str((i+1)*2))
         child = parent
         parent = child.getparent()
-
     cfi = cfiBase + '/' + '/'.join(cfi_list)
     return cfi
 
