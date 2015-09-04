@@ -61,7 +61,7 @@ class WhooshEngine(BaseEngine):
     def __get_text(self, filename):
         # html = urllib.urlopen('http://www.nytimes.com/2009/12/21/us/21storm.html').read()
         html = open(filename, "r")
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html, "lxml")
         texts = soup.findAll(text=True)
 
         def visible(element):
