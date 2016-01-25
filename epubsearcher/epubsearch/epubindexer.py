@@ -4,6 +4,7 @@ import re, os
 
 import logging
 
+logger = logging.getLogger('epubsearcher')
 
 class EpubIndexer(object):
     epub = False
@@ -22,7 +23,7 @@ class EpubIndexer(object):
             mod = importlib.import_module("epubsearcher.epubsearch.search_engines.%sengine" % engine_name)
             # import whooshengine as engine
             self.engine = getattr(mod,'%sEngine' % engine_name.capitalize())(database_name)
-            logging.info(self.engine)
+            logger.info(self.engine)
 
     def load(self, epub):
         self.epub = epub

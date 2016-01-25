@@ -16,9 +16,13 @@ except:
     from epubsearch import EpubIndexer
     from epubsearch import WordMorphoGenerator
 
-syslog = logging.handlers.SysLogHandler(address = '/dev/log')
-logging.basicConfig(format="%(levelname)s:%(asctime)s %(message)s datefmt='%Y-%m-%dT%H:%M:%S'",  level=logging.DEBUG,
-                    handlers=[syslog])
+formatter = logging.Formatter("%(levelname)s:%(asctime)s %(message)s datefmt='%Y-%m-%dT%H:%M:%S'")
+handler = logging.handlers.SysLogHandler(address='/dev/log')
+handler.setLevel(logging.ERROR)
+handler.setFormatter(formatter)
+logger = logging.getLogger('epubsearcher')
+logger.setLevel(logging.ERROR)
+logger.addHandler(handler)
 
 
 def unzip(source_filename, dest_dir):
@@ -37,16 +41,17 @@ class EpubWorker(object):
     @:force_index - if you need force reindex book
         :parameter True/False
     """
-    def __init__(self, book_address, lang='ru', force_index=False):
+    def __init__(self, book_address, lang='ru', force_index=False, log_level=logging.ERROR):
         force_index=force_index
         self.is_epub = False
         epub_worker_folder = "/tmp/epub_worker"
+        logger.setLevel(log_level)
         if not os.path.exists(epub_worker_folder):
             os.mkdir(epub_worker_folder)
 
         if book_address[-4:] == 'epub':
             self.is_epub = True
-            logging.info('Uncompress {}'.format(book_address))
+            logger.info('Uncompress {}'.format(book_address))
             book_name = book_address[book_address.rfind('/')+1:-5]
             self.dest_dir = '/tmp/epub_worker/temp/'+book_name
             unzip(book_address, self.dest_dir)
@@ -56,17 +61,17 @@ class EpubWorker(object):
 
         self.epub = EpubParser(book_address)
         self.index = EpubIndexer(engine_name='whoosh', database_name=book_name, force_index=force_index)
-        logging.info('Indexing')
+        logger.info('Indexing')
         self.index.load(self.epub)
 
     def search_word(self, search_word):
-        logging.info('Search word {}'.format(search_word))
+        logger.info('Search word {}'.format(search_word))
         return self.index.search(search_word)
 
     def search_lexemes(self, search_word):
-        logging.info('Generate words for search')
+        logger.info('Generate words for search')
         search_words = WordMorphoGenerator(search_word).generate()
-        logging.info('Search word {} and lexemes'.format(search_word, search_words))
+        logger.info('Search word {} and lexemes {}'.format(search_word, search_words))
         results_dirty = []
         results_formatted = []
         for word in search_words:
@@ -78,7 +83,10 @@ class EpubWorker(object):
                     results_formatted.append({'baseCfi': item['baseCfi'],
                                               'cfi': item['cfi'],
                                               'href': item['href'],
-                                              'path': item['path']})
+                                              'highlight': item['highlight'],
+                                              'title': item['title'],
+                                              'path': item['path'],
+                                              })
 
         return {'word': search_word,
                 'lexemes': search_words,
@@ -122,7 +130,7 @@ def get_parameters():
 
 
 def main():
-    logging.info('*'*20)
+    logger.info('*'*20)
     # get user defined parameters
     userParams = get_parameters()
 

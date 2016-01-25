@@ -2,6 +2,9 @@
 import importlib
 import logging
 
+logger = logging.getLogger('epubsearcher')
+
+
 class WordMorphoGenerator(object):
     engine = False
 
@@ -13,7 +16,7 @@ class WordMorphoGenerator(object):
             mod = importlib.import_module("epubsearcher.epubsearch.morpho_engines.%sengine" % engine_name)
             # import whooshengine as engine
             self.engine = getattr(mod,'%sEngine' % engine_name.capitalize())
-            logging.info(self.engine)
+            logger.info(self.engine)
 
     def generate(self):
         '''

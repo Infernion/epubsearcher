@@ -9,6 +9,9 @@ import re
 import logging
 
 
+logger = logging.getLogger('epubsearcher')
+
+
 class WhooshEngine(BaseEngine):
     # whoosh
     schema = Schema(title=TEXT(stored=True), path=TEXT(stored=True), href=ID(stored=True), cfiBase=TEXT(stored=True), spinePos=TEXT(stored=True), content=TEXT)
@@ -17,7 +20,7 @@ class WhooshEngine(BaseEngine):
         try:
             self.ix = index.open_dir(self.database_path)
         except Exception as e:
-            logging.error("openning database {} failed".format(self.database_name))
+            logger.error("openning database {} failed".format(self.database_name))
 
     def create(self):
 
@@ -25,28 +28,28 @@ class WhooshEngine(BaseEngine):
             os.mkdir(self.database_path)
 
         try:
-            logging.debug("openning database {} to create".format(self.database_name))
+            logger.debug("openning database {} to create".format(self.database_name))
             self.ix = index.create_in(self.database_path, self.schema)
         except Exception as e:
-            logging.error(e)
+            logger.error(e)
 
         self.writer = self.ix.writer()
 
     def add(self, path='', href='', title='', cfiBase='', spinePos=''):
         text = self.__get_text(path)
         self.writer.add_document(title=str(title), path=str(path), href=str(href), cfiBase=str(cfiBase), spinePos=str(spinePos), content=str(text))
-        logging.debug("Indexed: " + title + ' | ' + path + ' | ' + href + ' | ' + str(spinePos))
+        logger.debug("Indexed: " + title + ' | ' + path + ' | ' + href + ' | ' + str(spinePos))
 
     def finished(self):
         self.writer.commit()
 
     def query(self, q, limit=None):
-        logging.debug('Q {}'.format(q))
+        logger.debug('Q {}'.format(q))
         with self.ix.searcher() as searcher:
             results = []
             parsed_query = QueryParser("content", schema=self.ix.schema).parse(q)
             hits = searcher.search(parsed_query, limit=limit)
-            logging.debug("Hits {}".format(hits))
+            logger.debug("Hits {}".format(hits))
             for hit in hits:
                 item = {}
                 item['title'] = hit["title"].encode("utf-8")

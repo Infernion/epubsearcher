@@ -66,7 +66,7 @@ class BaseEngine(object):
         '''
         results = []
         
-        hit = [] # replace with DB query
+        hits = [] # replace with DB query
 
         for hit in hits:
             item = {}

@@ -4,6 +4,9 @@ from lxml import etree
 import logging
 import os
 
+logger = logging.getLogger('epubsearcher')
+
+
 class EpubParser(object):
     base = ''
     manifest = {}
@@ -58,7 +61,7 @@ class EpubParser(object):
             'dc':'http://purl.org/dc/elements/1.1/',
             'dcterms':'http://purl.org/dc/terms/'}
 
-        logging.debug("Parsing Manifest")
+        logger.debug("Parsing Manifest")
 
         items = {}
 
@@ -93,7 +96,7 @@ class EpubParser(object):
     def parse_toc(self, filename):
         namespaces = {'xmlns': 'http://www.daisy.org/z3986/2005/ncx/'}
 
-        logging.debug("Parsing TOC")
+        logger.debug("Parsing TOC")
 
         items = []
 
@@ -125,7 +128,7 @@ class EpubParser(object):
                 'dc':'http://purl.org/dc/elements/1.1/',
                 'dcterms':'http://purl.org/dc/terms/'}
 
-        logging.debug("Parsing Spine")
+        logger.debug("Parsing Spine")
 
         spinePos = 1
 

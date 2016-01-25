@@ -1,4 +1,5 @@
 whoosh
 pymorphy2
+pymorphy2-dicts-ru
 lxml
 BeautifulSoup4

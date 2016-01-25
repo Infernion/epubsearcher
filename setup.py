@@ -16,6 +16,8 @@ setup(
     install_requires = [
         "whoosh",
         "pymorphy2",
+        "pymorphy2-dicts-ru",
+        "pymorphy2-dicts-uk",
         "lxml",
         "BeautifulSoup4"
     ],
