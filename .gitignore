@@ -111,4 +111,4 @@ docs/_build/
 # PyBuilder
 target/
 
-
+epubsearcher/test_data
