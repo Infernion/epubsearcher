@@ -72,7 +72,7 @@ class EpubParser(object):
         for child in root.findall('xmlns:manifest/xmlns:item', namespaces=namespaces):
             item_id = child.attrib['id']
 
-            if not item_id in items:
+            if item_id not in items:
                 items[item_id] = {}
                 items[item_id]["href"] = child.attrib['href']
                 items[item_id]["media-type"] = child.attrib['media-type']
@@ -111,10 +111,8 @@ class EpubParser(object):
             nav_label = nav_point.find('xmlns:navLabel', namespaces=namespaces)
             title = nav_label.getchildren()[0].text.encode("utf-8")
             href = nav_point.getchildren()[1].attrib['src'].encode("utf-8")
-            item = {}
+            item = {'id': nav_point.attrib['id'], 'title': title}
 
-            item['id'] = nav_point.attrib['id']
-            item['title'] = title
             self.titles[href] = title
             items.append(item)
 
@@ -130,19 +128,14 @@ class EpubParser(object):
 
         logger.debug("Parsing Spine")
 
-        spinePos = 1
-
         items = []
 
         # begin parsing content.opf
         tree = ET.parse(filename)
         root = tree.getroot()
         # extract item hrefs and place in return list
-        for child in root.findall('xmlns:spine/xmlns:itemref', namespaces=namespaces):
-            item = {}
-
-            item["idref"] = child.attrib['idref']
-            item["spinePos"] = spinePos
+        for spinePos, child in enumerate(root.findall('xmlns:spine/xmlns:itemref', namespaces=namespaces), start=1):
+            item = {"idref": child.attrib['idref'], "spinePos": spinePos}
 
             item["cfiBase"] = "/" + "/".join([ self.spine_element_num, str(spinePos*2) + '[{}]'.format(item['idref']) ])
 
@@ -156,8 +149,6 @@ class EpubParser(object):
                 item['title'] = ''
 
             items.append(item)
-
-            spinePos += 1
 
         return items
 

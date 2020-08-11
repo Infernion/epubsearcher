@@ -46,13 +46,11 @@ class EpubIndexer(object):
     def search(self, q, limit=None):
         rawresults = self.engine.query(q, limit)
         # print len(rawresults)
-        r = {}
-        r["results"] = []
+        r = {"results": []}
         q = q.lower()
 
         for hit in rawresults:
-            baseitem = {}
-            baseitem['title'] = hit["title"].decode(encoding="UTF-8")
+            baseitem = {'title': hit["title"].decode(encoding="UTF-8")}
             baseitem['href'] = hit["href"].decode(encoding="UTF-8")
             baseitem['path'] = hit["path"].decode(encoding="UTF-8")
 
@@ -106,8 +104,7 @@ def get_cfi(cfiBase, word):
             cfi_list.insert(0,str((i+1)*2))
         child = parent
         parent = child.getparent()
-    cfi = cfiBase + '/' + '/'.join(cfi_list)
-    return cfi
+    return cfiBase + '/' + '/'.join(cfi_list)
 
 def get_cfi_chapter(cfi_base):
     cfi_base = re.sub(r'\[.*\]','',cfi_base)
@@ -127,11 +124,7 @@ def create_highlight(text, query):
     return leading_text + word + end_with_periods(ending_text)
 
 def trim_length(text, words):
-    if words > 0:
-        text_list = text.split(' ')[:words]
-    else:
-        text_list = text.split(' ')[words:]
-
+    text_list = text.split(' ')[:words] if words > 0 else text.split(' ')[words:]
     return ' '.join(text_list)
 
 def end_with_periods(text):
