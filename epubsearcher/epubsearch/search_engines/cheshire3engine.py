@@ -46,7 +46,7 @@ class Cheshire3Engine(BaseEngine):
 
     def __highlight(self, text, term, n):
         """Searches for text, retrieves n words either side of the text, which are retuned seperately"""
-        term_concordance = list()
+        term_concordance = []
         text_len = len(text)
         term_len = len(term)
         term_indexes = [w.start() for w in re.finditer(term, text)]
@@ -88,15 +88,23 @@ class Cheshire3Engine(BaseEngine):
     def add(self, path='', href='', title='', cfiBase='', spinePos=''):
         # first, index the document in cheshire3 using unix commands
         os.system("cheshire3-load --database=" + self.database_name + ' ' + path)
-        
-        doc_md = dict()
-        doc_md[href] = {'path' : path, 'href' : href, 'title' : title, 'cfiBase' : cfiBase, 'spinePos' : spinePos}
+
+        doc_md = {
+            href: {
+                'path': path,
+                'href': href,
+                'title': title,
+                'cfiBase': cfiBase,
+                'spinePos': spinePos,
+            }
+        }
+
         # title is not populated, so pulling filename from path prefix
         #filename = path[:path.find('/')] + '.json'
         metadata_path = self.database_path + self.cheshire_metadata_dir
         with open(metadata_path + '/' + self.database_name) as f_in:
             md_dict = json.load(f_in)
-            
+
         md_dict.update(doc_md)
 
         with open(metadata_path + '/' + self.database_name, 'w') as f_out:
@@ -113,7 +121,7 @@ class Cheshire3Engine(BaseEngine):
         """ In Cheshire3, you have to specify an index and query, else it defaults the all index  which utilizes simple extraction.
         """
 
-        if self.queryFactory == None:
+        if self.queryFactory is None:
             self.queryFactory = self.db.get_object(self.session, 'defaultQueryFactory')
 
         if self.titleSel is None:
@@ -134,7 +142,7 @@ class Cheshire3Engine(BaseEngine):
             db_md_dict = json.load(f)
 
         # loop through recordset, create new results list with dictionary of found values
-        results = list()
+        results = []
         for rsi in rs:
             rec = rsi.fetch_record(self.session)
             # check the record titles

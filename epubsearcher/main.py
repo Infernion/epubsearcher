@@ -94,8 +94,7 @@ class EpubWorker(object):
 
     def get_chapters_cfi(self):
         spine = self.epub.spine
-        characters_cfi = [row['cfiBase'] for row in spine]
-        return characters_cfi
+        return [row['cfiBase'] for row in spine]
 
     def close(self):
         shutil.rmtree(self.dest_dir)

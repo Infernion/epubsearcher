@@ -14,7 +14,6 @@ class BaseEngine(object):
 
         self.database_path = database_folder_path + database_name
         self.open()
-        pass
 
     def open(self):
         '''
@@ -65,17 +64,17 @@ class BaseEngine(object):
             spinePos
         '''
         results = []
-        
+
         hits = [] # replace with DB query
 
         for hit in hits:
-            item = {}
-            item['title']   = hit["title"]
-            item['href']    = hit["href"]
-            item['path']    = hit["path"]
-            item['title']   = hit["title"]
-            item['cfiBase'] = hit["cfiBase"]
-            item['spinePos']= hit["spinePos"]
+            item = {
+                'href': hit["href"],
+                'path': hit["path"],
+                'title': hit["title"],
+                'cfiBase': hit["cfiBase"],
+                'spinePos': hit["spinePos"],
+            }
 
             results.append(item)
 

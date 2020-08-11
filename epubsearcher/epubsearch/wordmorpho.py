@@ -23,5 +23,4 @@ class WordMorphoGenerator(object):
         run morpho procces for selected engine
         :return: list of words
         '''
-        result = self.engine(self.word).process()
-        return result
+        return self.engine(self.word).process()
